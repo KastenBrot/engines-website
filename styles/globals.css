@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply box-border;
+  }
+  body {
+    @apply bg-primary text-gray-200 w-full h-full scroll-smooth;
+  }
+}
+
+.customGradient {
+  @apply bg-gradient-to-b from-tertiary from-0% to-primary to-100%;
+}
+
+.hover-link:hover {
+  @apply cursor-pointer bg-clip-text bg-gradient-to-l from-primaryGreen to-secondaryGreen text-transparent transform -translate-y-1.5;
+}
+
+.btn {
+  @apply text-xl rounded-lg cursor-pointer whitespace-nowrap bg-secondaryGreen min-w-[10rem] px-[1.5rem] py-[0.75rem];
+}
+
+.btn:hover {
+  @apply cursor-pointer transform -translate-y-1.5;
+}
