@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { LogoWithText } from "@/public";
 import Button from "@/components/Button";
-import { navLinks, socialMedia } from "@/constants.ts";
+import { navLinks, socialMedia } from "@/constants";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 
 type Props = {};
