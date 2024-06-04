@@ -4,15 +4,36 @@
 
 @layer base {
   html {
-    @apply box-border;
+    @apply box-border font-inter;
   }
+
   body {
-    @apply bg-primary text-gray-200 w-full h-full scroll-smooth;
+    @apply bg-primary text-gray-200 scroll-smooth;
+  }
+
+  header {
+    @apply fixed top-0 z-50 w-full;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-anek font-semibold;
   }
 }
 
 .customGradient {
-  @apply bg-gradient-to-b from-tertiary from-0% to-primary to-100%;
+  @apply bg-gradient-to-b from-tertiary  via-secondary to-primary;
+}
+
+.heroGradient {
+  mask-image: radial-gradient(
+    ellipse closest-side at center center,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0.1) 90%,
+    rgba(0, 0, 0, 0.05) 95%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .hover-link:hover {
@@ -20,7 +41,7 @@
 }
 
 .btn {
-  @apply text-xl rounded-lg cursor-pointer whitespace-nowrap bg-secondaryGreen min-w-[10rem] px-[1.5rem] py-[0.75rem];
+  @apply text-lg rounded-xl cursor-pointer whitespace-nowrap bg-secondaryGreen min-w-[10rem] px-[1.5rem] py-[0.75rem];
 }
 
 .btn:hover {

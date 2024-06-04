@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { footerLinks, partners, socialMedia } from "@/constants";
+import { description, footerLinks, partners, socialMedia } from "@/constants";
 import { Logo } from "@/public";
 
 type Props = {};
@@ -24,7 +24,7 @@ export default function Footer(props: Props) {
                 Engines Stuttgart e.V.
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
-                <li>
+                <li key="1">
                   <Link
                     href="https://flowbite.com/"
                     className="hover:underline text-sm"
@@ -32,7 +32,7 @@ export default function Footer(props: Props) {
                     Games
                   </Link>
                 </li>
-                <li>
+                <li key="2">
                   <Link
                     href="https://tailwindcss.com/"
                     className="hover:underline text-sm"
@@ -40,7 +40,7 @@ export default function Footer(props: Props) {
                     {/* News
                   </Link>
                 </li>
-                <li>
+                <li key="3">
                   <Link
                     href="https://tailwindcss.com/"
                     className="hover:underline text-sm"
@@ -48,7 +48,7 @@ export default function Footer(props: Props) {
                     Partner
                   </Link>
                 </li>
-                <li>
+                <li key="4">
                   <Link
                     href="https://tailwindcss.com/"
                     className="hover:underline text-sm"
@@ -71,7 +71,7 @@ export default function Footer(props: Props) {
                     Impressum
                   </Link>
                 </li>
-                <li>
+                <li key="5">
                   <Link
                     href="https://discord.gg/4eeurUVvTy"
                     className="hover:underline text-sm"
@@ -79,7 +79,7 @@ export default function Footer(props: Props) {
                     Datenschutzerklärung
                   </Link>
                 </li>
-                <li>
+                <li key="6">
                   <Link
                     href="https://discord.gg/4eeurUVvTy"
                     className="hover:underline text-sm"
@@ -87,7 +87,7 @@ export default function Footer(props: Props) {
                     Satzung
                   </Link>
                 </li>
-                <li>
+                <li key="7">
                   <Link
                     href="https://discord.gg/4eeurUVvTy"
                     className="hover:underline text-sm"
@@ -99,7 +99,7 @@ export default function Footer(props: Props) {
             </div>
             <div className="col-span-2">
               <h2 className="mb-6 text-xs font-semibold text-gray-900 uppercase dark:text-white">
-                Teams und Spieler
+                Games
               </h2>
               <div className=" flex flex-direction: row">
                 <ul className="text-gray-600 dark:text-gray-400 ">
@@ -108,7 +108,7 @@ export default function Footer(props: Props) {
                       LoL
                     </Link>
                   </li>
-                  <li>
+                  <li key="8">
                     <Link
                       href="https://discord.gg/4eeurUVvTy"
                       className="hover:underline text-sm"
@@ -116,7 +116,7 @@ export default function Footer(props: Props) {
                       Overwatch
                     </Link>
                   </li>
-                  <li>
+                  <li key="9">
                     <Link
                       href="https://discord.gg/4eeurUVvTy"
                       className="hover:underline text-sm"
@@ -124,7 +124,7 @@ export default function Footer(props: Props) {
                       Valorant
                     </Link>
                   </li>
-                  <li>
+                  <li key="10">
                     <Link
                       href="https://discord.gg/4eeurUVvTy"
                       className="hover:underline text-sm"
@@ -139,7 +139,7 @@ export default function Footer(props: Props) {
                       CS:GO
                     </Link>
                   </li>
-                  <li>
+                  <li key="11">
                     <Link
                       href="https://discord.gg/4eeurUVvTy"
                       className="hover:underline ml-10 text-sm"
@@ -147,7 +147,7 @@ export default function Footer(props: Props) {
                       Apex
                     </Link>
                   </li>
-                  <li>
+                  <li key="12">
                     <Link
                       href="https://discord.gg/4eeurUVvTy"
                       className="hover:underline ml-10 text-sm"
@@ -155,7 +155,7 @@ export default function Footer(props: Props) {
                       Dota2
                     </Link>
                   </li>
-                  <li>
+                  <li key="13">
                     <Link
                       href="https://discord.gg/4eeurUVvTy"
                       className="hover:underline ml-10 text-sm"
@@ -172,20 +172,14 @@ export default function Footer(props: Props) {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400 ">
                 <li className="text-sm">
-                  <p>
-                    Der Engines Stuttgart e.V. ist der erste E-Sport-Verein in
-                    der Metropolregion Stuttgart. Seit Anfang 2018 machen wir es
-                    uns zur Aufgabe kompetitives Videospielen lokal zu fördern
-                    um Breiten(e)sport Strukturen aufzubauen und somit den
-                    E-Sport Standort Deutschland zu stärken.
-                  </p>
+                  <p>{description}</p>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-xs text-gray-500 sm:text-start dark:text-gray-400">
+        <hr className="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+        <span className="block text-xs text-gray-400 sm:text-center">
           © {year}{" "}
           <Link href="#" className="hover:underline">
             Engines Stuttgart e.V.
@@ -195,4 +189,5 @@ export default function Footer(props: Props) {
       </div>
     </footer>
   );
+  return <div></div>;
 }

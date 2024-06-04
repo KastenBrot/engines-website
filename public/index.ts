@@ -2,6 +2,7 @@
 import Logo from "@/public/logo.svg";
 import LogoWithText from "@/public/logo_with_text.svg";
 import Hero from "@/public/Hero.png";
+import HeroOriginal from "@/public/Hero_original.png";
 
 /* Social Media Icons */
 import Twitter from "@/public/twitter.svg";
@@ -35,6 +36,7 @@ export {
   Logo,
   LogoWithText,
   Hero,
+  HeroOriginal,
 
   /* Social Media Icons */
   Instagram,

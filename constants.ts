@@ -44,6 +44,9 @@ export const navLinks = [
   },*/,
 ];
 
+export const description =
+  "Der Engines Stuttgart e.V. ist der erste E-Sport-Verein in der Metropolregion Stuttgart. Seit Anfang 2018 machen wir es uns zur Aufgabe kompetitives Videospielen lokal zu fördern um Breiten(e)sport Strukturen aufzubauen und somit den E-Sport Standort Deutschland zu stärken.";
+
 export const footerLinks = [
   {
     title: "Useful Links",
