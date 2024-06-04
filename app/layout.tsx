@@ -1,10 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Anek_Gurmukhi } from "next/font/google";
 import "@/styles/globals.css";
-import NavBar from "@/components/NavBar";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const anek = Anek_Gurmukhi({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-anek-gurmukhi",
+});
 
 export const metadata: Metadata = {
   title: "Engines Stuttgart e.V.",
@@ -18,10 +28,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className + "bg-primary"}>
-        <NavBar />
-        {children}
+    <html lang="en" className={`${inter.variable} ${anek.variable}`}>
+      <body className="flex flex-col">
+        <Header />
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

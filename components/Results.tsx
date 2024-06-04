@@ -12,8 +12,8 @@ const Results = (props: Props) => {
   return (
     <section className="w-full bg-primary shadow-[0_20px_50px_rgba(26,_27,_26,_1)]">
       <div className="w-5/6 mx-auto">
-        <div className="pl-8 pt-8 flex-row ">
-          <div className="pr-8 text-[3rem] flex justify-center items-center align-top">
+        <div className="pt-8 flex-row ">
+          <div className="text-[3rem] flex justify-center items-center align-top">
             Match Historie
           </div>
         </div>

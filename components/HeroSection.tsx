@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { Discord, Hero } from "@/public";
+import { Discord, Hero, HeroOriginal } from "@/public";
 import Button from "@/components/Button";
+import { description } from "@/constants";
 
 type Props = {};
 
@@ -10,7 +11,7 @@ const HeroSection = (props: Props) => {
   const testLog = () => {
     console.log("CLICK!");
   };
-
+  /*
   return (
     <section
       id="home"
@@ -44,6 +45,31 @@ const HeroSection = (props: Props) => {
             src={Hero}
             alt="Hero Section Image"
           />
+        </div>
+      </div>
+    </section>
+  );*/
+  return (
+    <section className="flex flex-col h-screen lg:h-[85vh] pt-20 lg:flex-row gap-10 customGradient">
+      {/* IMAGE CONTAINER */}
+      <div className="relative h-1/2 lg:h-full lg:w-2/3 lg:order-2 heroGradient">
+        <Image
+          src={HeroOriginal}
+          alt="Hero Section Image"
+          fill={true}
+          className="object-cover"
+        />
+      </div>
+      {/* TEXT CONTAINER */}
+      <div className="h-1/2 lg:h-full lg:w-1/3 flex flex-col gap-8 items-center justify-center lg:order-1 px-10 lg:pl-36">
+        <h1 className="text-4xl lg:text-6xl self-start">
+          ENGINES <br /> STUTTGART e.V.
+        </h1>
+        <p className="md:text-xl text-justify">{description}</p>
+        <div className="w-full flex flex-col md:flex-row items-center justify-start gap-3 md:gap-6">
+          <Button onClick={testLog}>Werde Mitglied!</Button>
+          <span>oder</span>
+          <Button onClick={testLog}>Join us on Discord</Button>
         </div>
       </div>
     </section>

@@ -15,9 +15,12 @@ const config: Config = {
         lightgray: "#323436",
         primaryGreen: "#54e528",
         secondaryGreen: "#14a73c",
+        fillerGray1: "#131516",
+        fillerGray2: "#212326",
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        inter: ["var(--font-inter)"],
+        anek: ["var(--font-anek-gurmukhi)"],
       },
     },
   },

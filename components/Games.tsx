@@ -7,7 +7,7 @@ type Props = {};
 export default function Games(props: Props) {
   return (
     <section id="games" className="py-8 px-8 bg-secondary ">
-      <div className="pr-8  text-[3rem] w-5/6 mx-auto text-center">Games</div>
+      <h2 className="text-[3rem] w-5/6 mx-auto text-center">GAMES</h2>
       <div className="flex justify-center items-center w-full py-6 bg-secondary">
         <div className="w-3/4 flex justify-center items-center flex-wrap gap-12 text-gray-500 dark:text-gray-400">
           {games.map((game, index) => (
@@ -17,7 +17,7 @@ export default function Games(props: Props) {
             >
               <Image
                 src={game.icon}
-                alt="gane"
+                alt={game.name}
                 className="object-cover overflow-hidden rounded-lg hover:text-gray-900 dark:hover:text-white w-[30rem]"
               />
             </Link>
