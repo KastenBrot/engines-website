@@ -23,13 +23,36 @@
 }
 
 .customGradient {
-  @apply bg-gradient-to-b from-tertiary  via-secondary to-primary;
+  @apply bg-gradient-to-b from-tertiary via-secondary to-primary;
+}
+
+.testGradient {
+  mask: linear-gradient(to top, transparent 10%, #fff 15% 90%, transparent 95%),
+    linear-gradient(to left, transparent 10%, #fff 30% 90%, transparent 95%);
+  mask-size: 110% 110%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-composite: intersect;
 }
 
 .heroGradient {
   mask-image: radial-gradient(
+    circle farthest-side at center 70%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 0.7) 50%,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0.3) 70%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.1) 90%,
+    rgba(0, 0, 0, 0.05) 95%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.heroGradient2 {
+  mask-image: radial-gradient(
     ellipse closest-side at center center,
-    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0.9) 50%,
     rgba(0, 0, 0, 0.1) 90%,
     rgba(0, 0, 0, 0.05) 95%,
     rgba(0, 0, 0, 0) 100%
