@@ -50,7 +50,7 @@ const HeroSection = (props: Props) => {
     </section>
   );*/
   return (
-    <section className="flex flex-col h-screen lg:h-[85vh] pt-20 lg:flex-row gap-10 customGradient">
+    <section className="flex flex-col h-screen lg:h-[85vh] lg:flex-row gap-10 customGradient">
       {/* IMAGE CONTAINER */}
       <div className="relative h-1/2 lg:h-full lg:w-2/3 lg:order-2 heroGradient">
         <Image
