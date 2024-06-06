@@ -37,14 +37,14 @@ export default function Footer(props: Props) {
                     href="https://tailwindcss.com/"
                     className="hover:underline text-sm"
                   >
-                    News
+                    {/* News
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="https://tailwindcss.com/"
                     className="hover:underline text-sm"
-                  >
+                  > */}
                     Partner
                   </Link>
                 </li>
@@ -92,7 +92,7 @@ export default function Footer(props: Props) {
                     href="https://discord.gg/4eeurUVvTy"
                     className="hover:underline text-sm"
                   >
-                    Presse
+                    {/* Presse */}
                   </Link>
                 </li>
               </ul>
