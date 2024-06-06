@@ -21,15 +21,12 @@ import INNOTEC from "@/public/LOGO_INNOTEC.svg";
 import SMZ from "@/public/LOGO_SMZ.svg";
 
 import Overwatch from "@/public/overwatch.jpg";
-import Valorant from "@/public/valorant.jpg";
-import CSGO from "@/public/csgo.jpg";
-import Apex from "@/public/apex.jpg";
-import Dota2 from "@/public/dota2.jpg";
+import Valorant from "@/public/valorant.svg";
+import CS2 from "@/public/cs2.png";
 import RocketLeague from "@/public/rocketlegue.jpg";
 import LeagueofLegends from "@/public/leagueoflegends.jpg";
 import F1 from "@/public/f1.jpg";
-
-import ValorantLogo from "@/public/valologo.png";
+import RainbowSix from "@/public/rainbowsix.png"
 
 export {
   /* Hero Images */
@@ -55,11 +52,9 @@ export {
   SMZ,
   Overwatch,
   Valorant,
-  CSGO,
-  Apex,
-  Dota2,
+  CS2,
   RocketLeague,
   LeagueofLegends,
   F1,
-  ValorantLogo,
+  RainbowSix
 };

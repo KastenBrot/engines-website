@@ -12,7 +12,7 @@ export default function Games(props: Props) {
         <div className="w-3/4 flex justify-center items-center flex-wrap gap-12 text-gray-500 dark:text-gray-400">
           {games.map((game, index) => (
             <Link
-              className="flex justify-center items-center flex-wrap max-w-[24rem] hover:scale-110 transition-all duration-500 cursor-pointer"
+              className="flex justify-center items-center flex-wrap max-w-[24rem] hover:scale-110 transition-all duration-500 cursor-pointer bg-black w-1/2 p-6 h-64 rounded-lg"
               href="https://www.smz-stuttgart.de/"
             >
               <Image
