@@ -29,11 +29,11 @@ export const navLinks = [
   {
     id: "games",
     title: "Games",
-  },
+  } /*
   {
     id: "news",
     title: "News",
-  },
+  },*/,
   {
     id: "verein",
     title: "Verein",
