@@ -92,7 +92,7 @@ export default function Footer(props: Props) {
                     href="https://discord.gg/4eeurUVvTy"
                     className="hover:underline text-sm"
                   >
-                    Presse
+                    {/* Presse */}
                   </Link>
                 </li>
               </ul>
