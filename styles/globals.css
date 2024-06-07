@@ -86,3 +86,7 @@
   -webkit-filter: blur(2.5px);
   opacity: .5;
 }
+
+.height-test {
+  top: -50vh;
+}

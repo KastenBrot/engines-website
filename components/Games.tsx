@@ -13,7 +13,7 @@ export default function Games(props: Props) {
           {games.map((game, index) => (
             <Link
               className="flex justify-center items-center flex-wrap max-w-[24rem] hover:scale-110 transition-all duration-500 cursor-pointer bg-engines w-1/2 p-6 h-64 rounded-lg"
-              href="https://www.smz-stuttgart.de/"
+              href={game.link}
             >
               <Image 
                 src={game.background}

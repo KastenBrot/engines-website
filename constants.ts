@@ -173,56 +173,56 @@ export const games = [
     id: "lol",
     name: "League of Legends",
     icon: LeagueOfLegends,
-    link: "https://www.smz-stuttgart.de/",
+    link: "games/lol",
     background: LolBackground
   },
   {
     id: "overwatch",
     name: "Overwatch",
     icon: Overwatch,
-    link: "https://www.smz-stuttgart.de/",
+    link: "/games/overwatch",
     background: OWBackground
   },
   {
     id: "rocketleague",
     name: "Rocket League",
     icon: RocketLeague,
-    link: "https://www.smz-stuttgart.de/",
+    link: "/games/rocketleague",
     background: RLBackground
   },
   {
     id: "valorant",
     name: "Valorant",
     icon: Valorant,
-    link: "https://www.smz-stuttgart.de/",
+    link: "/games/valorant",
     background: ValorantBackground
   },
   {
     id: "cs2",
     name: "CS2",
     icon: CounterStrike2,
-    link: "https://www.smz-stuttgart.de/",
+    link: "/games/cs2",
     background: CS2Background
   },
   {
     id: "f123",
     name: "F1 2023",
     icon: F123,
-    link: "https://www.smz-stuttgart.de/",
+    link: "/games/f1",
     background: F1Background
   },
   {
     id: "rainbowsix",
     name: "Rainbow Six Siege",
     icon: RainbowSixSiege,
-    link: "https://www.smz-stuttgart.de/",
+    link: "/games/rainbow",
     background: RainbowBackground
   },
   {
     id: "assettocorsa",
     name: "Assetto Corsa",
     icon: AssettoCorsa,
-    link: "https://www.smz-stuttgart.de/",
+    link: "/games/assetto",
     background: AssettoBackground
   },
 ];
