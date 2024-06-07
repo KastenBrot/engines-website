@@ -17,7 +17,16 @@ import {
   LeagueOfLegends,
   Overwatch,
   Valorant,
-  AssettoCorsa
+  AssettoCorsa,
+
+  LolBackground,
+  OWBackground,
+  RLBackground,
+  ValorantBackground,
+  CS2Background,
+  F1Background,
+  RainbowBackground,
+  AssettoBackground,
 } from "@/public";
 
 export const navLinks = [
@@ -165,47 +174,55 @@ export const games = [
     name: "League of Legends",
     icon: LeagueOfLegends,
     link: "https://www.smz-stuttgart.de/",
+    background: LolBackground
   },
   {
     id: "overwatch",
     name: "Overwatch",
     icon: Overwatch,
     link: "https://www.smz-stuttgart.de/",
+    background: OWBackground
   },
   {
     id: "rocketleague",
     name: "Rocket League",
     icon: RocketLeague,
     link: "https://www.smz-stuttgart.de/",
+    background: RLBackground
   },
   {
     id: "valorant",
     name: "Valorant",
     icon: Valorant,
     link: "https://www.smz-stuttgart.de/",
+    background: ValorantBackground
   },
   {
     id: "cs2",
     name: "CS2",
     icon: CounterStrike2,
     link: "https://www.smz-stuttgart.de/",
+    background: CS2Background
   },
   {
     id: "f123",
     name: "F1 2023",
     icon: F123,
     link: "https://www.smz-stuttgart.de/",
-  },
-  {
-    id: "assettocorsa",
-    name: "Assetto Corsa",
-    icon: RainbowSixSiege,
-    link: "https://www.smz-stuttgart.de/",
+    background: F1Background
   },
   {
     id: "rainbowsix",
     name: "Rainbow Six Siege",
     icon: RainbowSixSiege,
     link: "https://www.smz-stuttgart.de/",
+    background: RainbowBackground
+  },
+  {
+    id: "assettocorsa",
+    name: "Assetto Corsa",
+    icon: AssettoCorsa,
+    link: "https://www.smz-stuttgart.de/",
+    background: AssettoBackground
   },
 ];

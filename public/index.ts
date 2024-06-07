@@ -26,8 +26,17 @@ import F123 from "@/public/F123.svg";
 import LeagueOfLegends from "@/public/LeagueOfLegends.svg";
 import Overwatch from "@/public/Overwatch.svg";
 import Valorant from "@/public/Valorant.svg";
-import RocketLeague from "@/public/RocketLeague.svg"
-import RainbowSixSiege from "@/public/RainbowSixSiege.svg"
+import RocketLeague from "@/public/RocketLeague.svg";
+import RainbowSixSiege from "@/public/RainbowSixSiege.svg";
+
+import LolBackground from "@/public/lol-background.jpg";
+import OWBackground from "@/public/ow-background.jpg";
+import RLBackground from "@/public/rl-background.jpg";
+import ValorantBackground from "@/public/valorant-background.jpg";
+import CS2Background from "@/public/cs-background.jpg";
+import RainbowBackground from "@/public/rainbow-background.jpg";
+import F1Background from "@/public/f1-background.jpg";
+import AssettoBackground from "@/public/assetto-background.jpg";
 
 export {
   /* Hero Images */
@@ -59,5 +68,14 @@ export {
   LeagueOfLegends,
   F123,
   RainbowSixSiege,
-  AssettoCorsa
+  AssettoCorsa,
+
+  LolBackground,
+  OWBackground,
+  RLBackground,
+  ValorantBackground,
+  CS2Background,
+  RainbowBackground,
+  F1Background,
+  AssettoBackground
 };
