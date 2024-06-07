@@ -3,19 +3,21 @@ import {
   Twitter,
   Discord,
   Twitch,
-  Youtube,
+
   HAM,
   INNOTEC,
   CSStuttgart,
   BARMER,
   SMZ,
+
+  RainbowSixSiege,
+  CounterStrike2,
+  F123,
+  RocketLeague,
+  LeagueOfLegends,
   Overwatch,
   Valorant,
-  CS2,
-  RainbowSix,
-  F1,
-  LeagueofLegends,
-  RocketLeague,
+  AssettoCorsa
 } from "@/public";
 
 export const navLinks = [
@@ -161,7 +163,7 @@ export const games = [
   {
     id: "lol",
     name: "League of Legends",
-    icon: LeagueofLegends,
+    icon: LeagueOfLegends,
     link: "https://www.smz-stuttgart.de/",
   },
   {
@@ -185,19 +187,25 @@ export const games = [
   {
     id: "cs2",
     name: "CS2",
-    icon: CS2,
+    icon: CounterStrike2,
     link: "https://www.smz-stuttgart.de/",
   },
   {
-    id: "simracing",
-    name: "Sim Racing",
-    icon: F1,
+    id: "f123",
+    name: "F1 2023",
+    icon: F123,
+    link: "https://www.smz-stuttgart.de/",
+  },
+  {
+    id: "assettocorsa",
+    name: "Assetto Corsa",
+    icon: RainbowSixSiege,
     link: "https://www.smz-stuttgart.de/",
   },
   {
     id: "rainbowsix",
     name: "Rainbow Six Siege",
-    icon: RainbowSix,
+    icon: RainbowSixSiege,
     link: "https://www.smz-stuttgart.de/",
   },
 ];

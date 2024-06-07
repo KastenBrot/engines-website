@@ -7,7 +7,6 @@ import HeroOriginal from "@/public/Hero_original.png";
 /* Social Media Icons */
 import Twitter from "@/public/twitter.svg";
 import Instagram from "@/public/instagram.svg";
-import Facebook from "@/public/facebook.svg";
 import Discord from "@/public/discord.svg";
 import Whatsapp from "@/public/whatsapp.svg";
 import Twitch from "@/public/twitch.svg";
@@ -20,13 +19,15 @@ import HAM from "@/public/LOGO_HAM.svg";
 import INNOTEC from "@/public/LOGO_INNOTEC.svg";
 import SMZ from "@/public/LOGO_SMZ.svg";
 
-import Overwatch from "@/public/overwatch.jpg";
-import Valorant from "@/public/valorant.svg";
-import CS2 from "@/public/cs2.png";
-import RocketLeague from "@/public/rocketlegue.jpg";
-import LeagueofLegends from "@/public/leagueoflegends.jpg";
-import F1 from "@/public/f1.jpg";
-import RainbowSix from "@/public/rainbowsix.png"
+/* Games */
+import AssettoCorsa from "@/public/AssettoCorsa.svg";
+import CounterStrike2 from "@/public/CounterStrike2.svg";
+import F123 from "@/public/F123.svg";
+import LeagueOfLegends from "@/public/LeagueOfLegends.svg";
+import Overwatch from "@/public/Overwatch.svg";
+import Valorant from "@/public/Valorant.svg";
+import RocketLeague from "@/public/RocketLeague.svg"
+import RainbowSixSiege from "@/public/RainbowSixSiege.svg"
 
 export {
   /* Hero Images */
@@ -37,7 +38,6 @@ export {
 
   /* Social Media Icons */
   Instagram,
-  Facebook,
   Twitter,
   Discord,
   Whatsapp,
@@ -50,11 +50,14 @@ export {
   HAM,
   INNOTEC,
   SMZ,
+
+  /* Games */
   Overwatch,
   Valorant,
-  CS2,
+  CounterStrike2,
   RocketLeague,
-  LeagueofLegends,
-  F1,
-  RainbowSix
+  LeagueOfLegends,
+  F123,
+  RainbowSixSiege,
+  AssettoCorsa
 };
