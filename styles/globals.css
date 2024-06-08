@@ -87,6 +87,8 @@
   opacity: .5;
 }
 
-.height-test {
-  top: -50vh;
+.from-engines {
+  --tw-gradient-from: #009C59 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }

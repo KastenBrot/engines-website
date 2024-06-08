@@ -20,23 +20,26 @@ import INNOTEC from "@/public/LOGO_INNOTEC.svg";
 import SMZ from "@/public/LOGO_SMZ.svg";
 
 /* Games */
-import AssettoCorsa from "@/public/AssettoCorsa.svg";
-import CounterStrike2 from "@/public/CounterStrike2.svg";
-import F123 from "@/public/F123.svg";
-import LeagueOfLegends from "@/public/LeagueOfLegends.svg";
-import Overwatch from "@/public/Overwatch.svg";
-import Valorant from "@/public/Valorant.svg";
-import RocketLeague from "@/public/RocketLeague.svg";
-import RainbowSixSiege from "@/public/RainbowSixSiege.svg";
+import AssettoCorsa from "@/public/games/assetto/AssettoCorsa.svg";
+import CounterStrike2 from "@/public/games/cs2/CounterStrike2.svg";
+import F123 from "@/public/games/f1/F123.svg";
+import LeagueOfLegends from "@/public/games/lol/LeagueOfLegends.svg";
+import Overwatch from "@/public/games/ow/Overwatch.svg";
+import Valorant from "@/public/games/valorant/Valorant.svg";
+import RocketLeague from "@/public/games/rocketleague/RocketLeague.svg";
+import RainbowSixSiege from "@/public/games/rainbow/RainbowSixSiege.svg";
 
-import LolBackground from "@/public/lol-background.jpg";
-import OWBackground from "@/public/ow-background.jpg";
-import RLBackground from "@/public/rl-background.jpg";
-import ValorantBackground from "@/public/valorant-background.jpg";
-import CS2Background from "@/public/cs-background.jpg";
-import RainbowBackground from "@/public/rainbow-background.jpg";
-import F1Background from "@/public/f1-background.jpg";
-import AssettoBackground from "@/public/assetto-background.jpg";
+import LolBackground from "@/public/games/lol/lol-background.jpg";
+import OWBackground from "@/public/games/ow/ow-background.jpg";
+import RLBackground from "@/public/games/rocketleague/rl-background.jpg";
+import ValorantBackground from "@/public/games/valorant/valorant-background.jpg";
+import CS2Background from "@/public/games/cs2/cs-background.jpg";
+import RainbowBackground from "@/public/games/rainbow/rainbow-background.jpg";
+import F1Background from "@/public/games/f1/f1-background.jpg";
+import AssettoBackground from "@/public/games/assetto/assetto-background.jpg";
+
+import LolScreenshot from "@/public/games/lol/lol-screenshot.jpg";
+import OWScreenshot from "@/public/games/ow/ow-screenshot.jpg"
 
 export {
   /* Hero Images */
@@ -77,5 +80,8 @@ export {
   CS2Background,
   RainbowBackground,
   F1Background,
-  AssettoBackground
+  AssettoBackground,
+
+  LolScreenshot,
+  OWScreenshot,
 };
