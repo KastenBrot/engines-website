@@ -18,7 +18,7 @@ export default function Game({ params }: { params: { game: string } }) {
             className="w-full blur-sm object-cover opacity-30" />
         <h1 className="absolute text-6xl mt-32">{data.title}</h1>
       </div>
-      <div className="lg:order-1 lg:pl-36 p-10 flex justify-center">
+      <div className="lg:order-1 lg:pl-36 flex justify-center p-8 lg:px-32 ">
         <div className="flex flex-row">
           <div className="w-1/2">
             <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-engines">{data.title}</h1>
