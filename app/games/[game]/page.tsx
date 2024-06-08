@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import { LolBackground, LolScreenshot, OWBackground, OWScreenshot } from "@/public";
+import { Discord, LolBackground, LolScreenshot, OWBackground, OWScreenshot } from "@/public";
 
 export default function Game({ params }: { params: { game: string } }) {
   const data = content.find(content => content.id === params.game);
@@ -21,8 +21,29 @@ export default function Game({ params }: { params: { game: string } }) {
       <div className="lg:order-1 lg:pl-36 flex justify-center p-8 lg:px-32 ">
         <div className="flex flex-col lg:flex-row gap-8 ">
           <div className="w-1/2">
-            <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-engines">{data.title}</h1>
-            <p>{data.description}</p>
+            <div>
+              <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-engines">{data.title}</h1>
+              <p>{data.description}</p>
+            </div>
+            <div className="py-8">
+              <h2 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-engines">Ansprechpartner:</h2>
+
+              <div className="flex flex-row gap-5 place-items-center">
+                <p>{data.responsible.name}</p>
+                <a 
+                  className="btn-secondary"
+                  href={`https://discordapp.com/users/${data.responsible.discordId}`}>
+                  <div className="flex flex-row">
+                    <Image
+                      src={Discord}
+                      alt="Discord Icon"
+                      className="w-5 mr-2"
+                    ></Image>
+                    {data.responsible.discordHandle}
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
           <Image
             src={data.screenshot}
@@ -44,6 +65,11 @@ const content = [
     backgroundAlt: 'Character posing in a city',
     screenshot: LolScreenshot,
     screenshotAlt: 'Character pushing a lane with his minions',
+    responsible: {
+      name: 'Jonathan "Jads"',
+      discordHandle: 'jadsgg',
+      discordId: '184757859383377921', 
+    },
   },
   {
     id: 'overwatch',
@@ -53,5 +79,10 @@ const content = [
     backgroundAlt: 'The overwatch team posing',
     screenshot: OWScreenshot,
     screenshotAlt: 'Reinhard having his shield up and Lucio behind healing him',
+    responsible: {
+      name: 'Marvin "Haikun"',
+      discordHandle: 'haikun',
+      discordId: '100644104613949440',
+    },
   }
 ]

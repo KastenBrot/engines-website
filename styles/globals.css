@@ -93,8 +93,19 @@
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.bg-paper {
-  background-image: url(/public/paper.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+.text-engines {
+  color: #00d87a;
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+  filter: invert(42%) sepia(25%) saturate(2788%) hue-rotate(119deg) brightness(94%) contrast(101%);
+  padding: 6px;
+  border-radius: .5rem;
+  transition-duration: .3s;
+}
+
+.btn-secondary:hover {
+  opacity: .6;
 }
