@@ -19,7 +19,7 @@ export default function Game({ params }: { params: { game: string } }) {
         <h1 className="absolute text-6xl mt-32">{data.title}</h1>
       </div>
       <div className="lg:order-1 lg:pl-36 flex justify-center p-8 lg:px-32 ">
-        <div className="flex flex-row">
+        <div className="flex flex-col lg:flex-row gap-8 ">
           <div className="w-1/2">
             <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-engines">{data.title}</h1>
             <p>{data.description}</p>
@@ -35,7 +35,7 @@ export default function Game({ params }: { params: { game: string } }) {
   );
 }
 
-export const content = [
+const content = [
   {
     id: 'lol',
     title: 'LEAGUE OF LEGENDS',
