@@ -3,6 +3,7 @@ import Logo from "@/public/logo.svg";
 import LogoWithText from "@/public/logo_with_text.svg";
 import Hero from "@/public/Hero.png";
 import HeroOriginal from "@/public/Hero_original.png";
+import Paper from "@/public/paper.png";
 
 /* Social Media Icons */
 import Twitter from "@/public/twitter.svg";
@@ -39,7 +40,7 @@ import F1Background from "@/public/games/f1/f1-background.jpg";
 import AssettoBackground from "@/public/games/assetto/assetto-background.jpg";
 
 import LolScreenshot from "@/public/games/lol/lol-screenshot.jpg";
-import OWScreenshot from "@/public/games/ow/ow-screenshot.jpg"
+import OWScreenshot from "@/public/games/ow/ow-screenshot.jpg";
 
 export {
   /* Hero Images */
@@ -47,6 +48,7 @@ export {
   LogoWithText,
   Hero,
   HeroOriginal,
+  Paper,
 
   /* Social Media Icons */
   Instagram,

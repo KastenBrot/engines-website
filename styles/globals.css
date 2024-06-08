@@ -92,3 +92,9 @@
   --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+
+.bg-paper {
+  background-image: url(/public/paper.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
