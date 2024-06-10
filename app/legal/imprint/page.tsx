@@ -2,7 +2,7 @@ export default async function Legal({ params }: { params: { page: string } }) {
     return (
         <section className="flex flex-col">
             <div className="flex justify-center h-1/3">
-                <h1 className="absolute text-6xl mt-32 text-transparent bg-clip-text bg-gradient-to-r from-engines">Impressum</h1>
+                <h1 className="absolute text-6xl mt-32 text-transparent bg-clip-text bg-gradient-to-r gradient-engines">Impressum</h1>
             </div>
             <div className="flex flex-col gap-4 p-8 mt-44 relative lg:mx-96 md:mx-32 mx-12">
                 <h1 className="text-2xl">Engines Stuttgart e.V.</h1>

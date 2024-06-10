@@ -71,8 +71,9 @@
   @apply cursor-pointer transform -translate-y-1.5;
 }
 
-.from-engines {
+.gradient-engines {
   --tw-gradient-from: #009C59 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #003a21 var(--tw-gradient-to-position);
 }
