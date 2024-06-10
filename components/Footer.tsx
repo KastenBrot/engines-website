@@ -65,7 +65,7 @@ export default function Footer(props: Props) {
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="">
                   <Link
-                    href="https://github.com/themesberg/flowbite"
+                    href="/legal/imprint"
                     className="hover:underline text-sm"
                   >
                     Impressum
@@ -73,7 +73,7 @@ export default function Footer(props: Props) {
                 </li>
                 <li key="5">
                   <Link
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="/legal/privacy"
                     className="hover:underline text-sm"
                   >
                     Datenschutzerklärung
@@ -81,18 +81,10 @@ export default function Footer(props: Props) {
                 </li>
                 <li key="6">
                   <Link
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="/legal/statutes"
                     className="hover:underline text-sm"
                   >
                     Satzung
-                  </Link>
-                </li>
-                <li key="7">
-                  <Link
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline text-sm"
-                  >
-                    {/* Presse */}
                   </Link>
                 </li>
               </ul>
