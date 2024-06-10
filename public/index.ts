@@ -42,6 +42,7 @@ import AssettoBackground from "@/public/games/assetto/assetto-background.jpg";
 import LolScreenshot from "@/public/games/lol/lol-screenshot.jpg";
 import OWScreenshot from "@/public/games/ow/ow-screenshot.jpg";
 
+
 export {
   /* Hero Images */
   Logo,
