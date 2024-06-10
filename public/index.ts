@@ -31,6 +31,7 @@ import F1 from "@/public/f1.jpg";
 
 import ValorantLogo from "@/public/valologo.png";
 
+
 export {
   /* Hero Images */
   Logo,
