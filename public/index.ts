@@ -14,10 +14,8 @@ import Twitch from "@/public/twitch.svg";
 import Youtube from "@/public/youtube.svg";
 
 /* Parner Logos */
-import BARMER from "@/public/LOGO_BARMER.svg";
 import CSStuttgart from "@/public/LOGO_CSS.svg";
 import HAM from "@/public/LOGO_HAM.svg";
-import INNOTEC from "@/public/LOGO_INNOTEC.svg";
 import SMZ from "@/public/LOGO_SMZ.svg";
 
 /* Games */
@@ -60,10 +58,8 @@ export {
   Youtube,
 
   /* Parner Logos */
-  BARMER,
   CSStuttgart,
   HAM,
-  INNOTEC,
   SMZ,
 
   /* Games */
