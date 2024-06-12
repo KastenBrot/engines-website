@@ -141,18 +141,6 @@ export const partners = [
     link: "https://computerspielschule-stuttgart.de/",
   },
   {
-    id: "partner-3",
-    name: "Barmer",
-    icon: BARMER,
-    link: "https://www.barmer.de/",
-  },
-  {
-    id: "partner-4",
-    name: "Inno-Tec",
-    icon: INNOTEC,
-    link: "https://in-technology.eu/",
-  },
-  {
     id: "partner-5",
     name: "HS für angewandtes Management",
     icon: HAM,
