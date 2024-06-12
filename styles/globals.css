@@ -72,8 +72,21 @@
 }
 
 .gradient-engines {
-  --tw-gradient-from: #009c59 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #003a21 var(--tw-gradient-to-position);
+  @apply bg-clip-text bg-gradient-to-l from-primaryGreen to-secondaryGreen text-transparent;
+}
+
+.btn-primary {
+  @apply bg-primaryGreen p-3 rounded text-whitesmoke transition duration-200;
+}
+
+.btn-primary:hover {
+  @apply bg-secondaryGreen;
+}
+
+.btn-secondary {
+  @apply p-3 rounded border-whitesmoke transition duration-200;
+}
+
+.btn-secondary:hover {
+  @apply bg-whitesmoker;
 }
