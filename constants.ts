@@ -3,11 +3,8 @@ import {
   Twitter,
   Discord,
   Twitch,
-
   HAM,
-  INNOTEC,
   CSStuttgart,
-  BARMER,
   SMZ,
 
   RainbowSixSiege,
