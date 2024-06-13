@@ -26,35 +26,30 @@ export default function Footer(props: Props) {
               <ul className="text-gray-600 dark:text-gray-400">
                 <li key="1">
                   <Link
-                    href="https://flowbite.com/"
+                    href="/mitglied-werden"
                     className="hover:underline text-sm"
                   >
-                    Games
+                    Mitglied werden
                   </Link>
                 </li>
                 <li key="2">
+                  
                   <Link
-                    href="https://tailwindcss.com/"
+                    href="/verein"
                     className="hover:underline text-sm"
                   >
-                    {/* News
-                  </Link>
-                </li>
-                <li key="3">
-                  <Link
-                    href="https://tailwindcss.com/"
-                    className="hover:underline text-sm"
-                  > */}
-                    Partner
+                    Verein und Vorstand
                   </Link>
                 </li>
                 <li key="4">
+                  {/*
                   <Link
-                    href="https://tailwindcss.com/"
+                    href="mailto:info@engines-stuttgart.de"
                     className="hover:underline text-sm"
                   >
                     Kontakt
                   </Link>
+                  */}
                 </li>
               </ul>
             </div>
@@ -96,13 +91,13 @@ export default function Footer(props: Props) {
               <div className=" flex flex-direction: row">
                 <ul className="text-gray-600 dark:text-gray-400 ">
                   <li className="">
-                    <Link href="#" className="hover:underline">
+                    <Link href="/games/lol" className="hover:underline">
                       LoL
                     </Link>
                   </li>
                   <li key="8">
                     <Link
-                      href="https://discord.gg/4eeurUVvTy"
+                      href="/games/overwatch"
                       className="hover:underline text-sm"
                     >
                       Overwatch
@@ -110,7 +105,7 @@ export default function Footer(props: Props) {
                   </li>
                   <li key="9">
                     <Link
-                      href="https://discord.gg/4eeurUVvTy"
+                      href="/games/valorant"
                       className="hover:underline text-sm"
                     >
                       Valorant
@@ -118,7 +113,7 @@ export default function Footer(props: Props) {
                   </li>
                   <li key="10">
                     <Link
-                      href="https://discord.gg/4eeurUVvTy"
+                      href="/games/rocketleague"
                       className="hover:underline text-sm"
                     >
                       Rocket League
@@ -127,32 +122,32 @@ export default function Footer(props: Props) {
                 </ul>
                 <ul className="text-gray-600 dark:text-gray-400">
                   <li className="">
-                    <Link href="#" className="hover:underline ml-10 text-sm">
+                    <Link href="/games/cs2" className="hover:underline ml-10 text-sm">
                       CS:GO
                     </Link>
                   </li>
                   <li key="11">
                     <Link
-                      href="https://discord.gg/4eeurUVvTy"
+                      href="/games/f1"
                       className="hover:underline ml-10 text-sm"
                     >
-                      Apex
+                      F1 2023
                     </Link>
                   </li>
                   <li key="12">
                     <Link
-                      href="https://discord.gg/4eeurUVvTy"
+                      href="/games/assetto"
                       className="hover:underline ml-10 text-sm"
                     >
-                      Dota2
+                      Assetto Corsa
                     </Link>
                   </li>
                   <li key="13">
                     <Link
-                      href="https://discord.gg/4eeurUVvTy"
+                      href="/games/rainbow"
                       className="hover:underline ml-10 text-sm"
                     >
-                      F1 22 Sim Racing
+                      Rainbow Six Siege
                     </Link>
                   </li>
                 </ul>
