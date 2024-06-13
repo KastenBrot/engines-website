@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ValorantLogo } from "@/public";
+import { Valorant } from "@/public";
 
 //TODO: LOGO auch dynamisch ändern
 
@@ -29,7 +29,7 @@ const Match: React.FC<MatchProps> = ({ score, format, tournament }) => {
         </div>
         <div className="bg-tertiary grid grid-cols-3 rounded-b p-3 items-center">
           <Image
-            src={ValorantLogo}
+            src={Valorant}
             className="w-[3rem] justify-center row-span-2 m-5"
             alt="Logo"
           />
