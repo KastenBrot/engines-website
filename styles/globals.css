@@ -133,19 +133,3 @@
 .bg-primaryGradient {
   @apply bg-gradient-to-l from-primaryGreen to-secondaryGreen transform -translate-y-1.5;
 }
-
-.bg-engines {
-  position: relative;
-  border: 3px solid #fff;
-}
-
-.background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: blur(2.5px);
-  -webkit-filter: blur(2.5px);
-  opacity: .5;
-}
