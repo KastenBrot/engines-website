@@ -32,16 +32,16 @@ export default async function AboutUs({ params }: { params: { page: string } }) 
                 <div className="my-6">
                     <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-engines">Vorstand und Verantwortliche</h2>
                     <h3 className="text-xl font-bold mt-4">Geschäftsführender Vorstand</h3>
-                    <Cards value={content} />                    <hr />
+                    <Cards values={geschaeftsfuehrung} />                    <hr />
                     <h3 className="text-xl font-bold mt-4">Vorstandsbeisitzende</h3>
-                    <Cards value={content} />
+                    <Cards values={beisitzende} />
                 </div>
             </div>
         </section>
     );
 }
 
-const content = [
+const geschaeftsfuehrung = [
     {
         name: "Simon Clauß",
         role: "Vorstandsvorsitzender",
@@ -58,9 +58,40 @@ const content = [
     },
     {
         name: "Sabrina Mank",
-        role: "Vorstand – Schatzmeisterin",
+        role: "Vorstand - Schatzmeisterin",
         image: Jonathan,
         mail: "s.mank@engines-stuttgart.de",
+        discord: ""
+    }
+]
+
+const beisitzende = [
+    {
+        name: "Fabian Cuntz",
+        role: "Vorstand - IT & Technik",
+        image: Simon,
+        mail: "f.cuntz@engines-stuttgart.de",
+        discord: ""
+    },    
+    {
+        name: "Marvin Kalchschmidt",
+        role: "Vorstand - Sportliche Leitung",
+        image: Jonathan,
+        mail: "m.kalschmidt@engines-stuttgart.de",
+        discord: ""
+    },
+    {
+        name: "Bastian Fritz",
+        role: "Vorstand - Events",
+        image: Jonathan,
+        mail: "b.fritz@engines-stuttgart.de",
+        discord: ""
+    },
+    {
+        name: "Alex Hummel",
+        role: "Vorstand - Marketing",
+        image: Jonathan,
+        mail: "a.hummel@engines-stuttgart.de",
         discord: ""
     }
 ]
