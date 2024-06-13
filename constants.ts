@@ -210,18 +210,4 @@ export const games = [
     link: "/games/assetto",
     background: AssettoBackground
   },
-  {
-    id: "rainbowsix",
-    name: "Rainbow Six Siege",
-    icon: RainbowSixSiege,
-    link: "https://www.smz-stuttgart.de/",
-    background: RainbowBackground
-  },
-  {
-    id: "assettocorsa",
-    name: "Assetto Corsa",
-    icon: AssettoCorsa,
-    link: "https://www.smz-stuttgart.de/",
-    background: AssettoBackground
-  },
 ];

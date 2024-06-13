@@ -46,7 +46,8 @@ import F1Screenshot from "@/public/games/f1/f1-screenshot.jpg";
 import RainbowScreenshot from "@/public/games/rainbow/rainbow-screenshot.jpg";
 import AssettoScreenshot from "@/public/games/assetto/assetto-screenshot.jpg"
 
-
+import Simon from "@/public/board-members/Simon_serious-200x300.png"
+import Jonathan from "@/public/board-members/JADS-rotated-200x300.jpg"
 
 export {
   /* Hero Images */
@@ -95,5 +96,9 @@ export {
   CS2Screenshot,
   F1Screenshot,
   RainbowScreenshot,
-  AssettoScreenshot
+  AssettoScreenshot,
+
+  /* BoardMembers */
+  Simon,
+  Jonathan
 };
