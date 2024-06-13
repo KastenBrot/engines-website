@@ -64,9 +64,16 @@
 }
 
 .btn {
-  @apply text-lg rounded-xl cursor-pointer whitespace-nowrap bg-secondaryGreen min-w-[10rem] px-[1.5rem] py-[0.75rem];
+  @apply text-xl font-anek font-bold rounded-xl cursor-pointer uppercase whitespace-nowrap bg-primaryGreen min-w-[10rem] px-[1.5rem] py-[0.75rem];
 }
 
 .btn:hover {
   @apply cursor-pointer transform -translate-y-1.5;
+}
+
+.gradient-engines {
+  --tw-gradient-from: #009c59 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #003a21 var(--tw-gradient-to-position);
 }

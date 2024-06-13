@@ -1,15 +1,10 @@
 import {
   Instagram,
-  Facebook,
   Twitter,
   Discord,
-  Whatsapp,
   Twitch,
-  Youtube,
   HAM,
-  INNOTEC,
   CSStuttgart,
-  BARMER,
   SMZ,
   Overwatch,
   Valorant,
@@ -29,11 +24,11 @@ export const navLinks = [
   {
     id: "games",
     title: "Games",
-  },
+  } /*
   {
     id: "news",
     title: "News",
-  },
+  },*/,
   {
     id: "verein",
     title: "Verein",
@@ -117,7 +112,7 @@ export const socialMedia = [
     id: "social-media-3",
     name: "Discord",
     icon: Discord,
-    link: "https://discord.gg/engines",
+    link: "https://discord.gg/ngns",
   },
   {
     id: "social-media-4",
@@ -139,18 +134,6 @@ export const partners = [
     name: "Computerspielschule Stuttgart",
     icon: CSStuttgart,
     link: "https://computerspielschule-stuttgart.de/",
-  },
-  {
-    id: "partner-3",
-    name: "Barmer",
-    icon: BARMER,
-    link: "https://www.barmer.de/",
-  },
-  {
-    id: "partner-4",
-    name: "Inno-Tec",
-    icon: INNOTEC,
-    link: "https://in-technology.eu/",
   },
   {
     id: "partner-5",
