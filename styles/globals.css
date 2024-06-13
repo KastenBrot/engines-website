@@ -97,7 +97,7 @@
   color: #00d87a;
 }
 
-.btn-secondary {
+.btn-discord {
   border: 2px solid white;
   color: white;
   filter: invert(42%) sepia(25%) saturate(2788%) hue-rotate(119deg) brightness(94%) contrast(101%);
@@ -105,7 +105,8 @@
   border-radius: .5rem;
   transition-duration: .3s;
 }
-.btn-secondary:hover {
+
+.btn-discord:hover {
   opacity: .6;
 
 }

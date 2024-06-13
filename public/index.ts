@@ -39,7 +39,12 @@ import AssettoBackground from "@/public/games/assetto/assetto-background.jpg";
 
 import LolScreenshot from "@/public/games/lol/lol-screenshot.jpg";
 import OWScreenshot from "@/public/games/ow/ow-screenshot.jpg";
-
+import RLScreenshot from "@/public/games/rocketleague/rl-screenshot.jpg";
+import ValorantScreenshot from "@/public/games/valorant/valorant-screenshot.jpg";
+import CS2Screenshot from "@/public/games/cs2/cs2-screenshot.jpg";
+import F1Screenshot from "@/public/games/f1/f1-screenshot.jpg";
+import RainbowScreenshot from "@/public/games/rainbow/rainbow-screenshot.jpg";
+import AssettoScreenshot from "@/public/games/assetto/assetto-screenshot.jpg"
 
 export {
   /* Hero Images */
@@ -83,4 +88,10 @@ export {
 
   LolScreenshot,
   OWScreenshot,
+  RLScreenshot,
+  ValorantScreenshot,
+  CS2Screenshot,
+  F1Screenshot,
+  RainbowScreenshot,
+  AssettoScreenshot
 };
