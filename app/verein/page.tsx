@@ -1,5 +1,6 @@
 import { Jonathan, Simon } from "@/public";
 import Cards from "@/components/Cards";
+import { StaticImageData } from "next/image";
 
 
 export default async function AboutUs({ params }: { params: { page: string } }) {
@@ -32,9 +33,9 @@ export default async function AboutUs({ params }: { params: { page: string } }) 
                 <div className="my-6">
                     <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-engines">Vorstand und Verantwortliche</h2>
                     <h3 className="text-xl font-bold mt-4">Geschäftsführender Vorstand</h3>
-                    <Cards values={geschaeftsfuehrung} />                    <hr />
+                    <Cards props={geschaeftsfuehrung} />                    <hr />
                     <h3 className="text-xl font-bold mt-4">Vorstandsbeisitzende</h3>
-                    <Cards values={beisitzende} />
+                    <Cards props={beisitzende} />
                 </div>
             </div>
         </section>
@@ -63,7 +64,7 @@ const geschaeftsfuehrung = [
         mail: "s.mank@engines-stuttgart.de",
         discord: ""
     }
-]
+];
 
 const beisitzende = [
     {
@@ -94,4 +95,4 @@ const beisitzende = [
         mail: "a.hummel@engines-stuttgart.de",
         discord: ""
     }
-]
+];
