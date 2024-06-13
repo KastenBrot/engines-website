@@ -13,10 +13,13 @@ const config: Config = {
         secondary: "#1a1c1e",
         tertiary: "#0a0c0d",
         lightgray: "#323436",
+        lightergray: "#d3d3d3",
         primaryGreen: "#009C59",
         secondaryGreen: "#14a73c",
         fillerGray1: "#131516",
         fillerGray2: "#212326",
+        whitesmoke: "whitesmoke",
+        whitesmoker: "rgb(223, 223, 223)"
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
