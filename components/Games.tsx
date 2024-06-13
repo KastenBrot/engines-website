@@ -24,6 +24,7 @@ export default function Games(props: Props) {
                 alt={game.name}
                 className="object-cover overflow-hidden rounded-lg hover:text-gray-900 dark:hover:text-white w-[30rem] z-10"
               />
+              
             </Link>
           ))}
         </div>

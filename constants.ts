@@ -14,7 +14,6 @@ import {
   LeagueOfLegends,
   Overwatch,
   Valorant,
-<<<<<<< HEAD
   AssettoCorsa,
 
   LolBackground,
@@ -25,9 +24,6 @@ import {
   F1Background,
   RainbowBackground,
   AssettoBackground,
-=======
-  AssettoCorsa
->>>>>>> fcfe428 (chores: merge constants)
 } from "@/public";
 
 export const navLinks = [
@@ -219,5 +215,13 @@ export const games = [
     name: "Rainbow Six Siege",
     icon: RainbowSixSiege,
     link: "https://www.smz-stuttgart.de/",
+    background: RainbowBackground
+  },
+  {
+    id: "assettocorsa",
+    name: "Assetto Corsa",
+    icon: AssettoCorsa,
+    link: "https://www.smz-stuttgart.de/",
+    background: AssettoBackground
   },
 ];
