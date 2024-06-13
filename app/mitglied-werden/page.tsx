@@ -19,15 +19,15 @@ export default async function BecomeMemeber({ params }: { params: { page: string
                 <div>
                     <div className="grid grid-row gap-5">
                         <div className={gridCols}>
-                            <div className="uppercase text-2xl w-full"><h1>deine vorteile</h1></div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                            <div className="uppercase text-2xl w-full my-auto"><h1>deine vorteile</h1></div>
+                            <div className="flex flex-col bg-primaryGradient p-3 rounded">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#282a2e" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 self-center">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                                 </svg>
                                 <span className="text-xl font-bold">Aktives Mitglied</span>
                             </div>
-                            <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+                            <div className="flex flex-col">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6 self-center">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                                     </svg>
                                     <span className="text-xl font-bold">Passives Mitglied</span>
@@ -125,19 +125,23 @@ export default async function BecomeMemeber({ params }: { params: { page: string
                                 <p>Für Erwachsene ab dem vollendeten 18. Lebensjahr: <span className="text-primaryGreen">6,00€/Monat</span></p>
                             </div>
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" className="size-12 text-lightergray">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                </svg>
+                                <p>Kostenlos</p>
                             </div>
                         </div>
 
                         <div className={gridCols}>
                             <div></div>
                             <div className="text-center">
-                                <button className="btn-primary uppercase front-thin">Aktives Mitglied werden</button>
+                                <a href="https://engines.webling.eu/forms/memberform/80791f7fef3ead3c4aa4" target="_blank" className="btn-primary uppercase front-thin">Aktives Mitglied werden</a>
                             </div>
                             <div>
-                                <button className="btn-secondary uppercase font-thin">Passives Mitglied werden</button>
+                                <a href="https://engines.webling.eu/forms/memberform/40b5ca27b45d9eb907b7" target="_blank" className="btn-secondary uppercase font-thin">Passives Mitglied werden</a>
+                            </div>
+                        </div>
+
+                        <div className={gridCols}>
+                            <div className="grid col-start-1 col-span-3 mt-10">
+                                <p className="text-sm font-thin">Wir leiten dich zum Anmeldeformular in unserem Mitgliedsverwaltungstool Webling weiter.</p>
                             </div>
                         </div>
                     </div>

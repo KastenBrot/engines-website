@@ -115,7 +115,7 @@
 }
 
 .btn-primary {
-  @apply bg-primaryGreen p-3 rounded text-whitesmoke transition duration-200;
+  @apply bg-primaryGreen p-3 rounded text-whitesmoke transition duration-300;
 }
 
 .btn-primary:hover {
@@ -123,9 +123,13 @@
 }
 
 .btn-secondary {
-  @apply p-3 rounded border-whitesmoke transition duration-200;
+  @apply p-3 rounded border-whitesmoke transition duration-300;
 }
 
 .btn-secondary:hover {
   @apply bg-whitesmoker;
+}
+
+.bg-primaryGradient {
+  @apply bg-gradient-to-l from-primaryGreen to-secondaryGreen transform -translate-y-1.5;
 }
