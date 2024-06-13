@@ -76,6 +76,7 @@ export {
   LeagueOfLegends,
   F123,
   RainbowSixSiege,
+<<<<<<< HEAD
   AssettoCorsa,
 
   LolBackground,
@@ -95,4 +96,7 @@ export {
   F1Screenshot,
   RainbowScreenshot,
   AssettoScreenshot
+=======
+  AssettoCorsa
+>>>>>>> fcfe428 (chores: merge constants)
 };

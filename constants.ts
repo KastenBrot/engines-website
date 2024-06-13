@@ -14,6 +14,7 @@ import {
   LeagueOfLegends,
   Overwatch,
   Valorant,
+<<<<<<< HEAD
   AssettoCorsa,
 
   LolBackground,
@@ -24,6 +25,9 @@ import {
   F1Background,
   RainbowBackground,
   AssettoBackground,
+=======
+  AssettoCorsa
+>>>>>>> fcfe428 (chores: merge constants)
 } from "@/public";
 
 export const navLinks = [
