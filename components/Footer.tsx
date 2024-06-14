@@ -8,7 +8,7 @@ type Props = {};
 export default function Footer(props: Props) {
   const year = new Date().getFullYear();
   return (
-    <footer className="w-full bg-secondary shadow md:py-8">
+    <footer className="w-full bg-secondary shadow md:py-8 border-t-2 border-primary">
       <div className="w-5/6 mx-auto">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link href="#" className="flex items-center mb-4 sm:mb-0">
@@ -33,11 +33,7 @@ export default function Footer(props: Props) {
                   </Link>
                 </li>
                 <li key="2">
-                  
-                  <Link
-                    href="/verein"
-                    className="hover:underline text-sm"
-                  >
+                  <Link href="/verein" className="hover:underline text-sm">
                     Verein und Vorstand
                   </Link>
                 </li>
@@ -122,7 +118,10 @@ export default function Footer(props: Props) {
                 </ul>
                 <ul className="text-gray-600 dark:text-gray-400">
                   <li className="">
-                    <Link href="/games/cs2" className="hover:underline ml-10 text-sm">
+                    <Link
+                      href="/games/cs2"
+                      className="hover:underline ml-10 text-sm"
+                    >
                       CS:GO
                     </Link>
                   </li>
@@ -165,7 +164,7 @@ export default function Footer(props: Props) {
             </div>
           </div>
         </div>
-        <hr className="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+        <hr className="my-6 sm:mx-auto border-primary lg:my-8" />
         <span className="block text-xs text-gray-400 sm:text-center">
           © {year}{" "}
           <Link href="#" className="hover:underline">
