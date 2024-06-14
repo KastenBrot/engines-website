@@ -35,18 +35,22 @@ const NavBar = (props: Props) => {
                 />
               </Link>
             </div>
-            <ul className="flex justify-between items-center  gap-12 text-xl">
+            <ul className="flex justify-between items-center gap-12 text-xl">
               {navLinks.map((nav, index) => (
                 <li key={nav.id} className="hover-link">
                   <Link href={`#${nav.id}`}>{nav.title}</Link>
                 </li>
               ))}
             </ul>
-            <ul className="flex justify-between items-center  gap-5">
+            <ul className="flex justify-between items-center gap-5">
               {socialMedia.map((nav, index) => (
                 <li key={nav.id} className="hover-link w-[2rem] h-[2rem]">
-                  <Link href={`${nav.link}`}>
-                    <Image src={nav.icon} alt={nav.name} />
+                  <Link
+                    href={`${nav.link}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <nav.icon />
                   </Link>
                 </li>
               ))}

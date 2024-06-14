@@ -1,25 +1,28 @@
 import {
-  Instagram,
-  Facebook,
-  Twitter,
-  Discord,
-  Whatsapp,
-  Twitch,
-  Youtube,
   HAM,
-  INNOTEC,
   CSStuttgart,
-  BARMER,
   SMZ,
+
+  RainbowSixSiege,
+  CounterStrike2,
+  F123,
+  RocketLeague,
+  LeagueOfLegends,
   Overwatch,
   Valorant,
-  CSGO,
-  Apex,
-  Dota2,
-  F1,
-  LeagueofLegends,
-  RocketLeague,
+  AssettoCorsa,
+
+  LolBackground,
+  OWBackground,
+  RLBackground,
+  ValorantBackground,
+  CS2Background,
+  F1Background,
+  RainbowBackground,
+  AssettoBackground,
 } from "@/public";
+
+import { Discord, Twitter, Twitch, Instagram } from "./components/SVGs/Socials";
 
 export const navLinks = [
   {
@@ -29,11 +32,11 @@ export const navLinks = [
   {
     id: "games",
     title: "Games",
-  },
+  } /*
   {
     id: "news",
     title: "News",
-  },
+  },*/,
   {
     id: "verein",
     title: "Verein",
@@ -117,7 +120,7 @@ export const socialMedia = [
     id: "social-media-3",
     name: "Discord",
     icon: Discord,
-    link: "https://discord.gg/engines",
+    link: "https://discord.gg/ngns",
   },
   {
     id: "social-media-4",
@@ -141,18 +144,6 @@ export const partners = [
     link: "https://computerspielschule-stuttgart.de/",
   },
   {
-    id: "partner-3",
-    name: "Barmer",
-    icon: BARMER,
-    link: "https://www.barmer.de/",
-  },
-  {
-    id: "partner-4",
-    name: "Inno-Tec",
-    icon: INNOTEC,
-    link: "https://in-technology.eu/",
-  },
-  {
     id: "partner-5",
     name: "HS für angewandtes Management",
     icon: HAM,
@@ -162,51 +153,59 @@ export const partners = [
 
 export const games = [
   {
-    id: "game-1",
+    id: "lol",
     name: "League of Legends",
-    icon: LeagueofLegends,
-    link: "https://www.smz-stuttgart.de/",
+    icon: LeagueOfLegends,
+    link: "games/lol",
+    background: LolBackground
   },
   {
-    id: "game-2",
+    id: "overwatch",
     name: "Overwatch",
     icon: Overwatch,
-    link: "https://www.smz-stuttgart.de/",
+    link: "/games/overwatch",
+    background: OWBackground
   },
   {
-    id: "game-3",
+    id: "rocketleague",
     name: "Rocket League",
     icon: RocketLeague,
-    link: "https://www.smz-stuttgart.de/",
+    link: "/games/rocketleague",
+    background: RLBackground
   },
   {
-    id: "game-4",
+    id: "valorant",
     name: "Valorant",
     icon: Valorant,
-    link: "https://www.smz-stuttgart.de/",
+    link: "/games/valorant",
+    background: ValorantBackground
   },
   {
-    id: "game-5",
-    name: "CS:GO",
-    icon: CSGO,
-    link: "https://www.smz-stuttgart.de/",
+    id: "cs2",
+    name: "CS2",
+    icon: CounterStrike2,
+    link: "/games/cs2",
+    background: CS2Background
   },
   {
-    id: "game-6",
-    name: "Apex Legends",
-    icon: Apex,
-    link: "https://www.smz-stuttgart.de/",
+    id: "f123",
+    name: "F1 2023",
+    icon: F123,
+    link: "/games/f1",
+    background: F1Background
   },
   {
-    id: "game-7",
-    name: "Dota 2",
-    icon: Dota2,
-    link: "https://www.smz-stuttgart.de/",
+    id: "rainbowsix",
+    name: "Rainbow Six Siege",
+    icon: RainbowSixSiege,
+    link: "/games/rainbow",
+    background: RainbowBackground
   },
   {
-    id: "game-8",
-    name: "Formel 1 2022",
-    icon: F1,
-    link: "https://www.smz-stuttgart.de/",
+    id: "assettocorsa",
+    name: "Assetto Corsa",
+    icon: AssettoCorsa,
+    link: "/games/assetto",
+    background: AssettoBackground
   },
 ];
