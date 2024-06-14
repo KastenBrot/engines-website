@@ -64,7 +64,7 @@
 }
 
 .btn {
-  @apply relative flex items-center gap-3 text-2xl font-inter font-bold rounded-full cursor-pointer uppercase bg-primaryGreen px-8 py-[0.75rem] transition-[background-color] duration-[0.3s,color] delay-[0.3s];
+  @apply relative flex items-center gap-3 text-lg 2xl:text-2xl font-inter font-bold rounded-full cursor-pointer uppercase bg-primaryGreen px-8 py-[0.75rem] transition-[background-color] duration-[0.3s,color] delay-[0.3s];
 }
 
 .btn::before {
@@ -95,15 +95,6 @@
   }
 }
 
-/*
-<a
-  href="#_"
-  class="w-full  text-white transition-colors duration-300 bg-green-400 rounded-full hover:bg-green-500 ease px-9 "
-  > Button
-  Text
-  </a
-  >
-*/
 
 .bg-engines {
   position: relative;
@@ -173,7 +164,7 @@
 */
 
 nav ul li a {
-  @apply block no-underline text-white text-2xl font-inter font-semibold uppercase relative transition-all duration-[0.5s] my-0 px-5 py-6 after:absolute;
+  @apply block no-underline text-white text-lg 2xl:text-2xl font-inter font-semibold uppercase relative transition-all duration-[0.5s] my-0 px-5 py-6 after:absolute;
 }
 nav ul li a:after {
   @apply h-px transition-[width] duration-[0.5s] m-0 bottom-0 inset-x-0 bg-primaryGreen w-0;

@@ -36,18 +36,18 @@ const HeroSection = (props: Props) => {
         />
       </div>
       {/* TEXT CONTAINER */}
-      <div className="h-1/2 lg:h-full lg:w-[40%] flex flex-col gap-8 items-start justify-center lg:order-1 lg:pl-40">
-        <span className="md:text-3xl text-primaryGreen font-inter font-semibold">
+      <div className="h-1/2 lg:h-full lg:w-[40%] flex flex-col gap-4 2xl:gap-8 items-start justify-center lg:order-1 lg:pl-20 2xl:pl-40">
+        <span className="text-base 2xl:text-3xl text-primaryGreen font-inter font-semibold">
           ENGINES STUTTGART e.V.
         </span>
-        <h1 className="text-5xl lg:text-8xl self-start uppercase">
+        <h1 className="text-4xl xl:text-5xl 2xl:text-8xl self-start uppercase">
           Wir bringen den E-Sport ins Ländle!
         </h1>
         <div className="flex w-full">
           <ButtonTest
             className="fill-primaryGreen stroke-primaryGreen hover:stroke-white"
             textStyle="font-anek text-lg font-bold stroke-none fill-white"
-            onClick={() => handleClick("become-member")}
+            onClick={() => handleClick("/mitglied-werden")}
           >
             Mitglied Werden
           </ButtonTest>

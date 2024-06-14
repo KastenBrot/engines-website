@@ -17,7 +17,7 @@ const Partners = (props: Props) => {
             <Image
               src={partner.icon}
               alt="Partner"
-              className="h-14 flex-shrink-0 lg:h-20 grayscale transition duration-500 hover:grayscale-0"
+              className="h-14 lg:h-16 2xl:h-20 flex-shrink-0 grayscale transition duration-500 hover:grayscale-0"
             />
           </Link>
         ))}

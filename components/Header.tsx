@@ -20,12 +20,12 @@ function NavBar(props: Props) {
 
   return (
     <header
-      className={`flex items-center justify-between px-4 lg:px-32 transition ease-in duration-500 gap-16 lg:gap-48 ${
+      className={`flex items-center justify-between px-4 lg:px-16 2xl:px-32 transition ease-in duration-500 gap-16 2xl:gap-48 ${
         scrollPosition > 20 ? "bg-tertiary" : "bg-transparent"
       }`}
     >
       <Link href="/">
-        <LogoWithText className="h-[4rem] lg:h-[5rem] cursor-pointer flex-shrink-0" />
+        <LogoWithText className="h-[4rem] 2xl:h-[5rem] cursor-pointer flex-shrink-0" />
       </Link>
 
       <nav className="relative hidden grow lg:flex items-center justify-between gap-16 fill">
@@ -41,7 +41,7 @@ function NavBar(props: Props) {
           {socialMedia.map((nav) => (
             <li key={nav.id}>
               <Link href={`${nav.link}`}>
-                <nav.icon className="fill-current text-4xl" />
+                <nav.icon className="fill-current text-2xl 2xl:text-4xl" />
               </Link>
             </li>
           ))}
