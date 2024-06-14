@@ -105,11 +105,67 @@
   >
 */
 
-.gradient-engines {
-  --tw-gradient-from: #009c59 var(--tw-gradient-from-position);
+.bg-engines {
+  position: relative;
+  border: 3px solid #fff;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(2.5px);
+  -webkit-filter: blur(2.5px);
+  opacity: .5;
+}
+
+.from-engines {
+  --tw-gradient-from: #009C59 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #003a21 var(--tw-gradient-to-position);
+}
+
+.text-engines {
+  color: #00d87a;
+}
+
+.btn-discord {
+  border: 2px solid white;
+  color: white;
+  filter: invert(42%) sepia(25%) saturate(2788%) hue-rotate(119deg) brightness(94%) contrast(101%);
+  padding: 6px;
+  border-radius: .5rem;
+  transition-duration: .3s;
+}
+
+.btn-discord:hover {
+  opacity: .6;
+}
+
+.gradient-engines {
+  @apply bg-clip-text bg-gradient-to-l from-primaryGreen to-secondaryGreen text-transparent;
+}
+
+.btn-primary {
+  @apply bg-primaryGreen p-3 rounded text-whitesmoke transition duration-300;
+}
+
+.btn-primary:hover {
+  @apply bg-secondaryGreen;
+}
+
+.btn-secondary {
+  @apply p-3 rounded border-whitesmoke transition duration-300;
+}
+
+.btn-secondary:hover {
+  @apply bg-whitesmoker;
+}
+
+.bg-primaryGradient {
+  @apply bg-gradient-to-l from-primaryGreen to-secondaryGreen transform -translate-y-1.5;
 }
 
 /*

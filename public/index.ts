@@ -2,40 +2,85 @@
 import Logo from "@/public/logo.svg";
 import LogoWithText from "@/public/logo_with_text.svg";
 import HeroOriginal from "@/public/Hero_original.png";
+import Paper from "@/public/paper.png";
 
 /* Parner Logos */
 import CSStuttgart from "@/public/LOGO_CSS.svg";
 import HAM from "@/public/LOGO_HAM.svg";
 import SMZ from "@/public/LOGO_SMZ.svg";
 
-import Overwatch from "@/public/overwatch.jpg";
-import Valorant from "@/public/valorant.jpg";
-import CSGO from "@/public/csgo.jpg";
-import Apex from "@/public/apex.jpg";
-import Dota2 from "@/public/dota2.jpg";
-import RocketLeague from "@/public/rocketlegue.jpg";
-import LeagueofLegends from "@/public/leagueoflegends.jpg";
-import F1 from "@/public/f1.jpg";
+/* Games */
+import AssettoCorsa from "@/public/games/assetto/AssettoCorsa.svg";
+import CounterStrike2 from "@/public/games/cs2/CounterStrike2.svg";
+import F123 from "@/public/games/f1/F123.svg";
+import LeagueOfLegends from "@/public/games/lol/LeagueOfLegends.svg";
+import Overwatch from "@/public/games/ow/Overwatch.svg";
+import Valorant from "@/public/games/valorant/Valorant.svg";
+import RocketLeague from "@/public/games/rocketleague/RocketLeague.svg";
+import RainbowSixSiege from "@/public/games/rainbow/RainbowSixSiege.svg";
 
-import ValorantLogo from "@/public/valologo.png";
+import LolBackground from "@/public/games/lol/lol-background.jpg";
+import OWBackground from "@/public/games/ow/ow-background.jpg";
+import RLBackground from "@/public/games/rocketleague/rl-background.jpg";
+import ValorantBackground from "@/public/games/valorant/valorant-background.jpg";
+import CS2Background from "@/public/games/cs2/cs-background.jpg";
+import RainbowBackground from "@/public/games/rainbow/rainbow-background.jpg";
+import F1Background from "@/public/games/f1/f1-background.jpg";
+import AssettoBackground from "@/public/games/assetto/assetto-background.jpg";
+
+import LolScreenshot from "@/public/games/lol/lol-screenshot.jpg";
+import OWScreenshot from "@/public/games/ow/ow-screenshot.jpg";
+import RLScreenshot from "@/public/games/rocketleague/rl-screenshot.jpg";
+import ValorantScreenshot from "@/public/games/valorant/valorant-screenshot.jpg";
+import CS2Screenshot from "@/public/games/cs2/cs2-screenshot.jpg";
+import F1Screenshot from "@/public/games/f1/f1-screenshot.jpg";
+import RainbowScreenshot from "@/public/games/rainbow/rainbow-screenshot.jpg";
+import AssettoScreenshot from "@/public/games/assetto/assetto-screenshot.jpg"
+
+import Simon from "@/public/board-members/Simon_serious-200x300.png"
+import Jonathan from "@/public/board-members/JADS-rotated-200x300.jpg"
 
 export {
   /* Hero Images */
   Logo,
   LogoWithText,
   HeroOriginal,
+  Paper,
 
-  /* Parner Logos */
+  /* Partner Logos */
   CSStuttgart,
   HAM,
   SMZ,
+
+  /* Games */
   Overwatch,
   Valorant,
-  CSGO,
-  Apex,
-  Dota2,
+  CounterStrike2,
   RocketLeague,
-  LeagueofLegends,
-  F1,
-  ValorantLogo,
+  LeagueOfLegends,
+  F123,
+  RainbowSixSiege,
+  AssettoCorsa,
+
+  LolBackground,
+  OWBackground,
+  RLBackground,
+  ValorantBackground,
+  CS2Background,
+  RainbowBackground,
+  F1Background,
+  AssettoBackground,
+
+  LolScreenshot,
+  OWScreenshot,
+  RLScreenshot,
+  ValorantScreenshot,
+  CS2Screenshot,
+  F1Screenshot,
+  RainbowScreenshot,
+  AssettoScreenshot,
+
+  /* BoardMembers */
+  Simon,
+  Jonathan
 };
