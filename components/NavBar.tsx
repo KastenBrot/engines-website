@@ -45,8 +45,12 @@ const NavBar = (props: Props) => {
             <ul className="flex justify-between items-center gap-5">
               {socialMedia.map((nav, index) => (
                 <li key={nav.id} className="hover-link w-[2rem] h-[2rem]">
-                  <Link href={`${nav.link}`} target="_blank">
-                    <Image src={nav.icon} alt={nav.name} />
+                  <Link
+                    href={`${nav.link}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <nav.icon />
                   </Link>
                 </li>
               ))}

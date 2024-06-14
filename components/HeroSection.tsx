@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { redirect } from "next/navigation";
-import { Discord, Hero, HeroOriginal } from "@/public";
+import { HeroOriginal } from "@/public";
 import ButtonTest from "@/components/ButtonTest";
 import { useRouter } from "next/navigation";
 
@@ -17,7 +16,10 @@ const HeroSection = (props: Props) => {
 
   const handleNavigate = (path: string) => {};
   return (
-    <section className="flex flex-col h-screen lg:h-[80vh] lg:flex-row customGradient">
+    <section
+      id="#home"
+      className="flex flex-col h-screen lg:h-[80vh] lg:flex-row customGradient"
+    >
       {/* IMAGE CONTAINER */}
       <div className="relative h-1/2 lg:h-full lg:w-[60%] lg:order-2 heroGradient lg:mr-[-5%]">
         <Image
@@ -34,7 +36,7 @@ const HeroSection = (props: Props) => {
         />
       </div>
       {/* TEXT CONTAINER */}
-      <div className="h-1/2 lg:h-full lg:w-[40%] flex flex-col gap-8 items-start justify-center lg:order-1 lg:pl-40 lg:ml-[5%]">
+      <div className="h-1/2 lg:h-full lg:w-[40%] flex flex-col gap-8 items-start justify-center lg:order-1 lg:pl-40">
         <span className="md:text-3xl text-primaryGreen font-inter font-semibold">
           ENGINES STUTTGART e.V.
         </span>
@@ -43,15 +45,15 @@ const HeroSection = (props: Props) => {
         </h1>
         <div className="flex w-full">
           <ButtonTest
-            className="mr-[-0.5em] fill-primaryGreen stroke-primaryGreen hover:stroke-white"
-            textStyle="font-anek text-xl font-bold stroke-none fill-white"
+            className="fill-primaryGreen stroke-primaryGreen hover:stroke-white"
+            textStyle="font-anek text-lg font-bold stroke-none fill-white"
             onClick={() => handleClick("become-member")}
           >
             Mitglied Werden
           </ButtonTest>
           <ButtonTest
-            className="ml-[-0.5em] fill-transparent stroke-white hover:stroke-primaryGreen hover:text-primaryGreen"
-            textStyle="font-anek text-xl font-bold stroke-none"
+            className="fill-transparent stroke-white hover:stroke-primaryGreen hover:text-primaryGreen"
+            textStyle="font-anek text-lg font-bold stroke-none"
             rotateButton={true}
             onClick={() => handleClick("https://discord.com/invite/ngns")}
           >

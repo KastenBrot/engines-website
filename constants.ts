@@ -1,8 +1,4 @@
 import {
-  Instagram,
-  Twitter,
-  Discord,
-  Twitch,
   HAM,
   CSStuttgart,
   SMZ,
@@ -25,6 +21,8 @@ import {
   RainbowBackground,
   AssettoBackground,
 } from "@/public";
+
+import { Discord, Twitter, Twitch, Instagram } from "./components/SVGs/Socials";
 
 export const navLinks = [
   {

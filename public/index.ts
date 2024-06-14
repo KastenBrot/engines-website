@@ -1,17 +1,8 @@
 /* Hero Images*/
 import Logo from "@/public/logo.svg";
 import LogoWithText from "@/public/logo_with_text.svg";
-import Hero from "@/public/Hero.png";
 import HeroOriginal from "@/public/Hero_original.png";
 import Paper from "@/public/paper.png";
-
-/* Social Media Icons */
-import Twitter from "@/public/twitter.svg";
-import Instagram from "@/public/instagram.svg";
-import Discord from "@/public/discord.svg";
-import Whatsapp from "@/public/whatsapp.svg";
-import Twitch from "@/public/twitch.svg";
-import Youtube from "@/public/youtube.svg";
 
 /* Parner Logos */
 import CSStuttgart from "@/public/LOGO_CSS.svg";
@@ -53,19 +44,10 @@ export {
   /* Hero Images */
   Logo,
   LogoWithText,
-  Hero,
   HeroOriginal,
   Paper,
 
-  /* Social Media Icons */
-  Instagram,
-  Twitter,
-  Discord,
-  Whatsapp,
-  Twitch,
-  Youtube,
-
-  /* Parner Logos */
+  /* Partner Logos */
   CSStuttgart,
   HAM,
   SMZ,
