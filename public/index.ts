@@ -1,17 +1,7 @@
 /* Hero Images*/
 import Logo from "@/public/logo.svg";
 import LogoWithText from "@/public/logo_with_text.svg";
-import Hero from "@/public/Hero.png";
 import HeroOriginal from "@/public/Hero_original.png";
-
-/* Social Media Icons */
-import Twitter from "@/public/twitter.svg";
-import Instagram from "@/public/instagram.svg";
-import Facebook from "@/public/facebook.svg";
-import Discord from "@/public/discord.svg";
-import Whatsapp from "@/public/whatsapp.svg";
-import Twitch from "@/public/twitch.svg";
-import Youtube from "@/public/youtube.svg";
 
 /* Parner Logos */
 import CSStuttgart from "@/public/LOGO_CSS.svg";
@@ -29,22 +19,11 @@ import F1 from "@/public/f1.jpg";
 
 import ValorantLogo from "@/public/valologo.png";
 
-
 export {
   /* Hero Images */
   Logo,
   LogoWithText,
-  Hero,
   HeroOriginal,
-
-  /* Social Media Icons */
-  Instagram,
-  Facebook,
-  Twitter,
-  Discord,
-  Whatsapp,
-  Twitch,
-  Youtube,
 
   /* Parner Logos */
   CSStuttgart,

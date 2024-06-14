@@ -1,8 +1,4 @@
 import {
-  Instagram,
-  Twitter,
-  Discord,
-  Twitch,
   HAM,
   CSStuttgart,
   SMZ,
@@ -15,6 +11,8 @@ import {
   LeagueofLegends,
   RocketLeague,
 } from "@/public";
+
+import { Discord, Twitter, Twitch, Instagram } from "./components/SVGs/Socials";
 
 export const navLinks = [
   {

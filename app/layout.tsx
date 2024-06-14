@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Anek_Gurmukhi } from "next/font/google";
+import { Inter, Anek_Gurmukhi, Exo_2 } from "next/font/google";
 import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -11,9 +11,15 @@ const inter = Inter({
 });
 
 const anek = Anek_Gurmukhi({
-  subsets: ["latin"],
+  subsets: ["gurmukhi"],
   display: "swap",
   variable: "--font-anek-gurmukhi",
+});
+
+const exo2 = Exo_2({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-exo-2",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +34,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${anek.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${anek.variable} ${exo2.variable}`}
+    >
       <body className="flex flex-col">
         <Header />
         <main>{children}</main>

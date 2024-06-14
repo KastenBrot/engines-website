@@ -3,12 +3,12 @@
 interface ButtonProps {
   children: React.ReactNode;
   onClick: () => void;
-  style?: string;
+  className?: string;
 }
 
-export default function Button({ children, onClick, style }: ButtonProps) {
+export default function Button({ children, onClick, className }: ButtonProps) {
   return (
-    <button className={`btn ${style} `} onClick={onClick}>
+    <button className={`btn ${className}`} onClick={onClick}>
       {children}
     </button>
   );
