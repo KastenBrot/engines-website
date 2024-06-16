@@ -49,7 +49,7 @@ function NavBar(props: Props) {
       </nav>
       <Button
         className="text-white"
-        onClick={() => handleClick("https://www.xoose.de/engines-stuttgart/")}
+        onClick={() => handleClick("https://www.xoose.de/ngns/")}
       >
         <ShoppingBag className="fill-current flex-shrink-0" />
         <span>Shop</span>
