@@ -120,7 +120,7 @@ export const socialMedia = [
     id: "social-media-3",
     name: "Discord",
     icon: Discord,
-    link: "https://discord.gg/ngns",
+    link: "https://discord.gg/engines",
   },
   {
     id: "social-media-4",
