@@ -26,11 +26,11 @@ import { Discord, Twitter, Twitch, Instagram } from "./components/SVGs/Socials";
 
 export const navLinks = [
   {
-    id: "home",
+    id: "/#home",
     title: "Home",
   },
   {
-    id: "games",
+    id: "/#games",
     title: "Games",
   } /*
   {

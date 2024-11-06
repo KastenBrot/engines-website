@@ -3,15 +3,13 @@
 import Image from "next/image";
 import { HeroOriginal } from "@/public";
 import ButtonTest from "@/components/ButtonTest";
-import { useRouter } from "next/navigation";
 
 type Props = {};
 
 const HeroSection = (props: Props) => {
-  const router = useRouter();
 
   const handleClick = (redirectPath: string) => {
-    router.push(redirectPath);
+    window.open(redirectPath, "_blank");
   };
 
   const handleNavigate = (path: string) => {};
