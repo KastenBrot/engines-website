@@ -32,7 +32,7 @@ function NavBar(props: Props) {
         <ul className="flex justify-between items-center list-none gap-3 line">
           {navLinks.map((nav) => (
             <li key={nav.id}>
-              <Link href={`#${nav.id}`}>{nav.title}</Link>
+              <Link href={`${nav.id}`}>{nav.title}</Link>
             </li>
           ))}
         </ul>
