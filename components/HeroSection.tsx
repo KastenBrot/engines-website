@@ -3,15 +3,13 @@
 import Image from "next/image";
 import { HeroOriginal } from "@/public";
 import ButtonTest from "@/components/ButtonTest";
-import { useRouter } from "next/navigation";
 
 type Props = {};
 
 const HeroSection = (props: Props) => {
-  const router = useRouter();
 
   const handleClick = (redirectPath: string) => {
-    router.push(redirectPath);
+    window.open(redirectPath, "_blank");
   };
 
   const handleNavigate = (path: string) => {};
@@ -55,7 +53,7 @@ const HeroSection = (props: Props) => {
             className="fill-transparent stroke-white hover:stroke-primaryGreen hover:text-primaryGreen"
             textStyle="font-anek text-lg font-bold stroke-none"
             rotateButton={true}
-            onClick={() => handleClick("https://discord.com/invite/ngns")}
+            onClick={() => handleClick("https://discord.com/invite/UwA2eSZVB4")}
           >
             Join our Discord
           </ButtonTest>

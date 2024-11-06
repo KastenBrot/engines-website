@@ -26,11 +26,11 @@ import { Discord, Twitter, Twitch, Instagram } from "./components/SVGs/Socials";
 
 export const navLinks = [
   {
-    id: "home",
+    id: "/#home",
     title: "Home",
   },
   {
-    id: "games",
+    id: "/#games",
     title: "Games",
   } /*
   {
@@ -120,7 +120,7 @@ export const socialMedia = [
     id: "social-media-3",
     name: "Discord",
     icon: Discord,
-    link: "https://discord.gg/ngns",
+    link: "https://discord.com/invite/UwA2eSZVB4",
   },
   {
     id: "social-media-4",

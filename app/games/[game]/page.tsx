@@ -37,9 +37,9 @@ export default function Game({ params }: { params: { game: string } }) {
         />
         <h1 className="absolute text-6xl mt-32">{data.title}</h1>
       </div>
-      <div className="lg:order-1 lg:pl-36 flex justify-center p-8 lg:px-32 ">
+      <div className="lg:order-1 lg:pl-36 flex justify-center p-8 lg:px-32">
         <div className="flex flex-col lg:flex-row gap-8 ">
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <div>
               <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-engines">
                 {data.title}
@@ -73,7 +73,7 @@ export default function Game({ params }: { params: { game: string } }) {
           <Image
             src={data.screenshot}
             alt={data.screenshotAlt}
-            className="w-1/2"
+            className="lg:w-1/2"
           ></Image>
         </div>
       </div>
