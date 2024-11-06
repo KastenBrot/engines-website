@@ -6,16 +6,14 @@ import { navLinks, socialMedia } from "@/constants";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { LogoWithText } from "./SVGs/EnginesLogos";
 import { ShoppingBag } from "./SVGs/Icons";
-import { useRouter } from "next/navigation";
 
 type Props = {};
 
 function NavBar(props: Props) {
   const scrollPosition = useScrollPosition();
-  const router = useRouter();
 
   const handleClick = (redirectPath: string) => {
-    router.push(redirectPath);
+    window.open(redirectPath, "_blank");
   };
 
   return (
@@ -40,7 +38,7 @@ function NavBar(props: Props) {
         <ul className="flex justify-between items-center list-none">
           {socialMedia.map((nav) => (
             <li key={nav.id}>
-              <Link href={`${nav.link}`}>
+              <Link href={`${nav.link}`} target="_blank">
                 <nav.icon className="fill-current text-2xl 2xl:text-4xl" />
               </Link>
             </li>
