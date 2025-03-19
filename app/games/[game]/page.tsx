@@ -92,9 +92,9 @@ const content = [
     screenshot: LolScreenshot,
     screenshotAlt: "Character pushing a lane with his minions",
     responsible: {
-      name: 'Jonathan "Jads"',
-      discordHandle: "jadsgg",
-      discordId: "184757859383377921",
+      name: 'Chris "CCX1307"',
+      discordHandle: "coolchrisx1307",
+      discordId: "1319432822460780605",
     },
   },
   {
@@ -122,9 +122,9 @@ const content = [
     screenshot: RLScreenshot,
     screenshotAlt: "Two rocket cars shooting a ball in a goal",
     responsible: {
-      name: 'Marvin "Haikun"',
-      discordHandle: "haikun",
-      discordId: "100644104613949440",
+      name: 'Akhi "Akhi"',
+      discordHandle: "shadicti",
+      discordId: "965636299509882980",
     },
   },
   {
@@ -167,9 +167,9 @@ const content = [
     screenshot: F1Screenshot,
     screenshotAlt: "F1 cars overtakign another",
     responsible: {
-      name: 'Marvin "Haikun"',
-      discordHandle: "haikun",
-      discordId: "100644104613949440",
+      name: 'Oskar "Cypher"',
+      discordHandle: "cyhper3102",
+      discordId: "260422097506009098",
     },
   },
   {
