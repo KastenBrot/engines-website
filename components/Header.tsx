@@ -101,13 +101,13 @@ function NavBar(props: Props) {
             </li>
           ))}
           <li>
-            <button
-              className="text-white flex items-center gap-2"
+            <Button
+              className="text-white"
               onClick={() => handleClick("https://www.xoose.de/ngns/")}
             >
               <ShoppingBag className="fill-current flex-shrink-0" />
               <span>Shop</span>
-            </button>
+            </Button>
           </li>
         </ul>
       </nav>
