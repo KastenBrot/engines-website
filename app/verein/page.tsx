@@ -47,50 +47,50 @@ const geschaeftsfuehrung = [
         name: "Simon Clauß",
         role: "Vorstandsvorsitzender",
         image: Simon,
-        mail: "s.clauss@engines-stuttgart.de",
+        mail: "s.clauss(at)engines-stuttgart.de",
         discord: ""
     },    
     {
         name: "Jonathan Berg",
         role: "Stellv. Vorstandsvorsitzender",
         image: Jonathan,
-        mail: "j.berg@engines-stuttgart.de",
+        mail: "j.berg(at)engines-stuttgart.de",
         discord: ""
     },
     {
         name: "Sabrina Mank",
-        role: "Vorstand - Schatzmeisterin",
+        role: "Schatzmeisterin",
         image: Jonathan,
-        mail: "s.mank@engines-stuttgart.de",
+        mail: "s.mank(at)engines-stuttgart.de",
         discord: ""
     }
 ];
 
 const beisitzende = [
     {
-        name: "Fabian Cuntz",
-        role: "Vorstand - IT & Technik",
-        image: Simon,
-        mail: "f.cuntz@engines-stuttgart.de",
-        discord: ""
-    },    
-    {
         name: "Marvin Kalchschmidt",
-        role: "Vorstand - Sportliche Leitung",
+        role: "Beisitzer - Sportliche Leitung",
         image: Jonathan,
-        mail: "m.kalschmidt@engines-stuttgart.de",
+        mail: "m.kalschmidt(at)engines-stuttgart.de",
         discord: ""
     },
     {
-        name: "Bastian Fritz",
-        role: "Vorstand - Events",
+        name: "Dietrich Chris",
+        role: "Beisitzer - Events",
         image: Jonathan,
-        mail: "b.fritz@engines-stuttgart.de",
+        mail: "c.dietrich(at)engines-stuttgart.de",
         discord: ""
     },
     {
         name: "Alex Hummel",
-        role: "Vorstand - Marketing",
+        role: "Beisitzer - Marketing",
+        image: Jonathan,
+        mail: "a.hummel@engines-stuttgart.de",
+        discord: ""
+    },
+    {
+        name: "Oskar Bigus",
+        role: "Beisitzer - Jugendschutzbeauftragter",
         image: Jonathan,
         mail: "a.hummel@engines-stuttgart.de",
         discord: ""
