@@ -9,7 +9,7 @@ export default function Games(props: Props) {
     <section id="games" className="py-8 px-8 bg-secondary ">
       <h2 className="text-[3rem] w-5/6 mx-auto text-center">GAMES</h2>
       <div className="flex justify-center items-center w-full py-6 ">
-        <div className="lg:w-3/4 flex justify-center items-center flex-wrap gap-12">
+        <div className="flex justify-center items-center flex-wrap gap-12">
           {games.map((game, index) => (
             <Link
               className="flex justify-center items-center flex-wrap max-w-[24rem] hover:scale-110 transition-all duration-500 cursor-pointer bg-engines md:w-1/2 p-6 h-64 rounded-lg"

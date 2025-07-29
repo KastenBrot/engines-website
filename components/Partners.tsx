@@ -7,12 +7,12 @@ type Props = {};
 
 const Partners = (props: Props) => {
   return (
-    <div className="flex justify-center items-center w-full h-[20vh] bg-fillerGray1">
+    <div className="flex justify-center items-center w-full h-[10vh] md:h-[20vh] bg-fillerGray1">
       <div className="flex flex-row justify-between gap-8 lg:gap-16">
         {partners.map((partner, index) => (
           <Link
             href={partner.link}
-            className="cursor-pointer transition duration-500 hover:scale-125"
+            className="cursor-pointer transition duration-500 hover:scale-125 m-2 sm:m-4 lg:m-0"
           >
             <Image
               src={partner.icon}

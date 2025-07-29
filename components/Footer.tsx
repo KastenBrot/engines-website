@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { description, footerLinks, partners, socialMedia } from "@/constants";
+import { description, socialMedia } from "@/constants";
 import { Logo } from "@/public";
 
 type Props = {};
@@ -10,7 +10,7 @@ export default function Footer(props: Props) {
   return (
     <footer className="w-full bg-secondary shadow md:py-8 border-t-2 border-primary">
       <div className="w-5/6 mx-auto">
-        <div className="sm:flex sm:items-center sm:justify-between">
+        <div className="sm:flex sm:items-center sm:justify-between sm:mt-2">
           <Link href="#" className="flex items-center mb-4 sm:mb-0">
             <Image
               src={Logo}
@@ -80,7 +80,7 @@ export default function Footer(props: Props) {
                 </li>
               </ul>
             </div>
-            <div className="col-span-2">
+            <div className="col-span-2 hidden lg:block">
               <h2 className="mb-6 text-xs font-semibold text-gray-900 uppercase dark:text-white">
                 Games
               </h2>
@@ -152,7 +152,7 @@ export default function Footer(props: Props) {
                 </ul>
               </div>
             </div>
-            <div className="col-span-3">
+            <div className="col-span-3 hidden lg:block">
               <h2 className="mb-6 text-xs font-semibold text-gray-900 uppercase dark:text-white">
                 Über Uns
               </h2>
@@ -165,7 +165,17 @@ export default function Footer(props: Props) {
           </div>
         </div>
         <hr className="my-6 sm:mx-auto border-primary lg:my-8" />
-        <span className="block text-xs text-gray-400 sm:text-center">
+        {/* Social Links for Mobile */}
+        <div className="flex justify-center gap-4 mt-4 lg:hidden">
+          {socialMedia.map((nav) => (
+            <li key={nav.id} className="list-none">
+              <Link href={`${nav.link}`} target="_blank">
+                <nav.icon className="fill-current text-2xl 2xl:text-4xl" />
+              </Link>
+            </li>
+          ))}
+        </div>
+        <span className="block text-xs text-gray-400 sm:text-center my-4">
           © {year}{" "}
           <Link href="#" className="hover:underline">
             Engines Stuttgart e.V.
@@ -175,5 +185,4 @@ export default function Footer(props: Props) {
       </div>
     </footer>
   );
-  return <div></div>;
 }

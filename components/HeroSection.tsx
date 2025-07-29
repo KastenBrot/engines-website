@@ -16,25 +16,25 @@ const HeroSection = (props: Props) => {
   return (
     <section
       id="#home"
-      className="flex flex-col h-[50vh] sm:h-screen lg:h-[80vh] lg:flex-row customGradient"
+      className="relative flex flex-col h-[40vh] md:h-[50vh] lg:h-[80vh] lg:flex-row customGradient"
     >
       {/* IMAGE CONTAINER */}
-      <div className="md:h-1/2 lg:h-full lg:w-[60%] lg:order-2 heroGradient lg:mr-[-5%] relative">
+      <div className="absolute inset-0 heroGradient">
         <Image
           src={HeroOriginal}
           alt="Hero Section Image"
           width={7148}
           height={4771}
-          sizes="(max-width: 768px) 100vw, 
-               (max-width: 1200px) 75vw, 
-               50vw"
+          sizes="(max-width: 1200px) 60vw,
+              (max-width: 768px) 50vw,  
+              50vw"
           placeholder="blur"
           priority
-          className="object- md:object-cover"
+          className="object-cover w-full h-full filter blur-sm brightness-50"
         />
       </div>
       {/* TEXT CONTAINER */}
-      <div className="h-1/2 lg:h-full lg:w-[40%] flex flex-col gap-4 2xl:gap-8 items-start justify-center lg:order-1 lg:pl-20 2xl:pl-40 absolute md:relative m-4 md:m-0">
+      <div className="relative z-10 h-full flex flex-col gap-4 items-start justify-center lg:order-1 lg:pl-20 lg:h-full lg:w-[40%] 2xl:gap-8 2xl:pl-40 m-4 md:m-4 sm:m-2">
         <span className="text-base 2xl:text-3xl text-primaryGreen font-inter font-semibold">
           ENGINES STUTTGART e.V.
         </span>
