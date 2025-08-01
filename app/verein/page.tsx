@@ -7,11 +7,11 @@ export default async function AboutUs({ params }: { params: { page: string } }) 
     return (
         <section className="flex flex-col">
             <div className="flex justify-center h-1/3">
-                <h1 className="absolute text-6xl mt-32 text-transparent bg-clip-text bg-gradient-to-r gradient-engines">Verein und Vorstand</h1>
+                <h1 className="absolute text-4xl lg:text-6xl mt-32 text-transparent bg-clip-text bg-gradient-to-r gradient-engines">Verein und Vorstand</h1>
             </div>
-            <div className="flex flex-col gap-4 p-8 mt-48 mb-12 mx-auto w-1/2 bg-white rounded text-primary">
+            <div className="flex flex-col gap-4 p-4 md:p-8 lg:p-8 mt-48 mb-12 mx-auto w-[95vw] md:w-1/2 lg:w-1/2 bg-white rounded text-primary">
                 <div className="text-center">
-                    <h1 className="text-2xl">
+                    <h1 className="text-xl md:text-2xl">
                         <span className="text-6xl text-primaryGreen font-serif">"</span> Wir machen es uns zur Aufgabe, den eSport in der Metropolregion Stuttgart und darüber hinaus zu fördern und interessierten Spieler*innen ein professionelles Umfeld für ihre Entwicklung zu bieten.
                     </h1>
                   

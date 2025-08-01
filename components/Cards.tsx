@@ -15,9 +15,9 @@ interface CardProps {
 
 const Cards: React.FC<CardProps> = ({props}) => {
     return (
-        <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {props.map((item) => (
-                <div className="flex flex-col m-6">
+                <div className="flex flex-col m-6" key={item.name}>
                     <p className="text-2xl bold">{item.name}</p>
                     <p className="">{item.role}</p>
                 </div>
