@@ -175,7 +175,7 @@ nav.fill ul li a:hover {
 }
 
 nav.fill ul li a:hover:after {
-  @apply w-full -z-10 opacity-100 animate-[fill_1s_forwards];
+  @apply w-full -z-10 opacity-100 animate-[fill_.5s_forwards];
 }
 
 @keyframes fill {
