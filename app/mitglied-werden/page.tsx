@@ -13,6 +13,9 @@ export default async function BecomeMemeber({ params }: { params: { page: string
                     <p>…dann würden wir uns sehr freuen, dich als Mitglied bei uns begrüßen zu dürfen! Wir zeigen dir hier, was eine aktive und passive Mitgliedschaft bei uns bedeutet.</p>
                     <p>Möchtest du einen direkten Einfluss auf die Ausrichtung und Entwicklung des Vereins haben, sowie von Rabatten auf Merchandise, Events und Ausflüge profitieren? Dann kommt für dich die aktive Mitgliedschaft in Frage.</p>
                     <p>Wenn du lediglich daran interessiert bist, mit uns auf Events und Ausflüge zu gehen, in einem unserer Teams zu spielen oder für uns zu streamen, dann raten wir dir zu einer passiven Mitgliedschaft.</p>
+                    <br />
+                    <p>Aus Jugendschutzgründen, können wir nur Mitglieder ab 16 Jahren aufnehmen.</p>
+                    <br />
                     <p>Bei Fragen zur Mitgliedschaft kannst du uns jederzeit unter <a className="text-primaryGreen" href="mailto:info@engines-stuttgart.de">info@engines-stuttgart.de</a> kontaktieren!</p>
                 </div>
 
