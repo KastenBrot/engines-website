@@ -8,7 +8,7 @@ interface ButtonTestProps {
   onClick: () => void;
 }
 
-export default function ButtonTest({
+export default function ButtonTilted({
   children,
   className,
   textStyle,

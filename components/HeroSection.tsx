@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { HeroOriginal } from "@/public";
-import ButtonTest from "@/components/ButtonTest";
+import ButtonTilted from "@/components/Buttons/ButtonTilted";
 
 type Props = {};
 
@@ -42,21 +42,21 @@ const HeroSection = (props: Props) => {
           Wir bringen den E-Sport ins Ländle!
         </h1>
         <div className="flex w-full">
-          <ButtonTest
+          <ButtonTilted
             className="fill-primaryGreen stroke-primaryGreen hover:stroke-white"
             textStyle="font-anek text-lg font-bold stroke-none fill-white"
             onClick={() => handleClick("/mitglied-werden")}
           >
             Mitglied Werden
-          </ButtonTest>
-          <ButtonTest
+          </ButtonTilted>
+          <ButtonTilted
             className="fill-transparent stroke-white hover:stroke-primaryGreen hover:text-primaryGreen"
             textStyle="font-anek text-lg font-bold stroke-none"
             rotateButton={true}
             onClick={() => handleClick("https://discord.com/invite/UwA2eSZVB4")}
           >
             Join our Discord
-          </ButtonTest>
+          </ButtonTilted>
         </div>
       </div>
     </section>

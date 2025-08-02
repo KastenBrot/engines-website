@@ -1,13 +1,14 @@
 import Games from "@/components/Games";
 import HeroSection from "@/components/HeroSection";
 import Partners from "@/components/Partners";
-import Results from "@/components/Results";
+import About from "@/components/About";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <Partners />
+      <About />
       <Games />
       <Partners />
     </>
