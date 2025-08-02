@@ -15,7 +15,6 @@ export default function ButtonTilted({
   rotateButton,
   onClick,
 }: ButtonTestProps) {
-  const rotation = rotateButton ? 180 : 0;
   const textX = rotateButton ? "55%" : "45%";
 
   return (

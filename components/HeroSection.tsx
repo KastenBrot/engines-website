@@ -12,7 +12,6 @@ const HeroSection = (props: Props) => {
     window.open(redirectPath, "_blank");
   };
 
-  const handleNavigate = (path: string) => {};
   return (
     <section
       id="#home"
