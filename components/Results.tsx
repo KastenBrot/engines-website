@@ -1,6 +1,6 @@
 "use client";
 import Match from "@/components/Match";
-import Button from "@/components//Button";
+import Button from "@/components/Buttons/Button";
 
 type Props = {};
 

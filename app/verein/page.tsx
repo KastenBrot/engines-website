@@ -1,6 +1,5 @@
 import { Jonathan, Simon } from "@/public";
 import Cards from "@/components/Cards";
-import { StaticImageData } from "next/image";
 
 
 export default async function AboutUs({ params }: { params: { page: string } }) {
@@ -12,15 +11,15 @@ export default async function AboutUs({ params }: { params: { page: string } }) 
             <div className="flex flex-col gap-4 p-4 md:p-8 lg:p-8 mt-48 mb-12 mx-auto w-[95vw] md:w-1/2 lg:w-1/2 bg-white rounded text-primary">
                 <div className="text-center">
                     <h1 className="text-xl md:text-2xl">
-                        <span className="text-6xl text-primaryGreen font-serif">"</span> Wir machen es uns zur Aufgabe, den eSport in der Metropolregion Stuttgart und darüber hinaus zu fördern und interessierten Spieler*innen ein professionelles Umfeld für ihre Entwicklung zu bieten.
+                        <span className="text-6xl text-primaryGreen font-serif">"</span> Wir machen es uns zur Aufgabe, den E-Sport in der Metropolregion Stuttgart und darüber hinaus zu fördern und interessierten Spieler*innen ein professionelles Umfeld für ihre Entwicklung zu bieten.
                     </h1>
                   
-                    <p className="mt-12 text-left">Der Engines Stuttgart e.V. ist der erste eSport-Verein in der Metropolregion Stuttgart. Seit Anfang 2018 machen wir es uns zur Aufgabe kompetitives Videospielen lokal zu fördern um Breiten(e)sport Strukturen aufzubauen und somit den eSport Standort Deutschland zu stärken.</p>
+                    <p className="mt-12 text-left">Der Engines Stuttgart e.V. ist der erste E-Sport-Verein in der Metropolregion Stuttgart. Seit Anfang 2018 machen wir es uns zur Aufgabe kompetitives Videospielen lokal zu fördern um Breiten(e)sport Strukturen aufzubauen und somit den E-Sport Standort Deutschland zu stärken.</p>
                 </div>
 
                 <div className="mt-6">
                     <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-engines">Woher wir kommen</h2>
-                    <p>Wir haben unseren Ursprung in der Hochschule der Medien Stuttgart. 2017 gründeten Studenten die Hochschulinitiative “Campus eSports”, welche Gaming und eSport zu ihren Zielen zählte. Nachdem die Hochschulgruppe einen enormen Zuwachs (unter anderen von Externen) erfuhr, gründeten sich die “Engines Stuttgart“, die auch außerhalb der Hochschule tätig sein wollten. Kurz darauf wurde die “Engines Stuttgart Universität” aus dem Boden gestampft, die die Engines Stuttgart in der Universität Stuttgart vertreten. Nach zahlreichen erfolgreichen Events wie den “Media Legends” oder der “Stuggilan” beschlossen die Engines Stuttgart ein Verein zu werden. Dadurch können die Engines Stuttgart nun komplett unabhängig von der Hochschule agieren.</p>
+                    <p>Wir haben unseren Ursprung in der Hochschule der Medien Stuttgart. 2017 gründeten Studenten die Hochschulinitiative “Campus E-Sports”, welche Gaming und E-Sport zu ihren Zielen zählte. Nachdem die Hochschulgruppe einen enormen Zuwachs (unter anderen von Externen) erfuhr, gründeten sich die “Engines Stuttgart“, die auch außerhalb der Hochschule tätig sein wollten. Kurz darauf wurde die “Engines Stuttgart Universität” aus dem Boden gestampft, die die Engines Stuttgart in der Universität Stuttgart vertreten. Nach zahlreichen erfolgreichen Events wie den “Media Legends” oder der “Stuggilan” beschlossen die Engines Stuttgart ein Verein zu werden. Dadurch können die Engines Stuttgart nun komplett unabhängig von der Hochschule agieren.</p>
                 </div>
 
                 <div className="mt-6">

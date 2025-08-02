@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Button from "@/components/Button";
+import ShopButton from "@/components/Buttons/ShopButton";
 import { navLinks, socialMedia } from "@/constants";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { LogoWithText } from "./SVGs/EnginesLogos";
@@ -101,13 +101,13 @@ function NavBar(props: Props) {
             </li>
           ))}
           <li>
-            <Button
+            <ShopButton
               className="text-white"
               onClick={() => handleClick("https://www.xoose.de/ngns/")}
             >
               <ShoppingBag className="fill-current flex-shrink-0" />
               <span>Shop</span>
-            </Button>
+            </ShopButton>
           </li>
         </ul>
       </nav>
