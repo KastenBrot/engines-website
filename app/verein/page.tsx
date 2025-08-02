@@ -1,6 +1,5 @@
 import { Jonathan, Simon } from "@/public";
 import Cards from "@/components/Cards";
-import { StaticImageData } from "next/image";
 
 
 export default async function AboutUs({ params }: { params: { page: string } }) {
