@@ -2,13 +2,13 @@ export default async function Legal({ params }: { params: { page: string } }) {
   return (
     <section className="flex flex-col">
       <div className="flex justify-center h-1/3">
-        <h1 className="absolute text-6xl mt-32 text-transparent bg-clip-text bg-gradient-to-r gradient-engines">
+        <h1 className="absolute text-4xl mt-24 md:text-6xl md:mt-32 text-transparent bg-clip-text bg-gradient-to-r gradient-engines">
           Datenschutzerklärung
         </h1>
       </div>
-      <div className="flex flex-col gap-6 p-8 mt-44 relative lg:mx-96 md:mx-32 mx-12">
+      <div className="relative flex flex-col m-6 mt-36 gap-6 md:p-8 md:mt-44 md:mx-32 lg:mx-96">
         <article>
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="hidden mb-4 font-bold md:block md:text-3xl">
             Datenschutzerklärung für den ehrenamtlichen Esports Verein Engines
             Stuttgart e.V.
           </h2>
