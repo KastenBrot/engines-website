@@ -15,10 +15,10 @@ export default function Footer(props: Props) {
         </Link>
 
         <div className="text-center sm:text-left">
-          <h2 className="mb-4 xl:mb-6 text-xs font-semibold text-gray-900 uppercase dark:text-white">
+          <h2 className="mb-4 xl:mb-6 text-xs font-semibold text-white uppercase">
             Engines Stuttgart e.V.
           </h2>
-          <ul className="text-gray-600 dark:text-gray-400 space-y-1">
+          <ul className="text-gray-400 space-y-1">
             <li key="1">
               <Link href="/mitglied-werden" className="hover:underline text-sm">
                 Mitglied werden
@@ -33,10 +33,10 @@ export default function Footer(props: Props) {
         </div>
 
         <div className="text-center sm:text-left">
-          <h2 className="mb-4 xl:mb-6 text-xs font-semibold text-gray-900 uppercase dark:text-white">
+          <h2 className="mb-4 xl:mb-6 text-xs font-semibold text-white uppercase">
             Rechtliches
           </h2>
-          <ul className="text-gray-600 dark:text-gray-400 space-y-1">
+          <ul className="text-gray-400 space-y-1">
             <li className="">
               <Link href="/legal/imprint" className="hover:underline text-sm">
                 Impressum
@@ -56,11 +56,11 @@ export default function Footer(props: Props) {
         </div>
 
         <div className="hidden lg:block">
-          <h2 className="mb-4 xl:mb-6 text-xs font-semibold text-gray-900 uppercase dark:text-white">
+          <h2 className="mb-4 xl:mb-6 text-xs font-semibold text-white uppercase">
             Games
           </h2>
           <div>
-            <ul className="text-start text-gray-600 dark:text-gray-400 columns-2 space-y-1">
+            <ul className="text-start text-gray-400 columns-2 space-y-1">
               <li>
                 <Link href="/games/lol" className="hover:underline">
                   LoL
@@ -116,12 +116,10 @@ export default function Footer(props: Props) {
         </div>
 
         <div className="hidden md:block md:w-1/2 lg:w-2/5 xl:w-1/3">
-          <h2 className="mb-4 xl:mb-6 text-xs font-semibold text-gray-900 uppercase dark:text-white">
+          <h2 className="mb-4 xl:mb-6 text-xs font-semibold text-white uppercase ">
             Über Uns
           </h2>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            {description}
-          </p>
+          <p className="text-sm text-gray-400">{description}</p>
         </div>
       </div>
       <hr className="w-full border-primary" />
