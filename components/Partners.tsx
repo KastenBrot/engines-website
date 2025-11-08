@@ -8,7 +8,7 @@ type Props = {};
 const Partners = (props: Props) => {
   return (
     <div className="flex justify-center items-center w-full h-[10vh] md:h-[20vh] bg-fillerGray1">
-      <div className="flex flex-row justify-between gap-8 lg:gap-16">
+      <div className="flex flex-row justify-between lg:gap-x-32">
         {partners.map((partner, index) => (
           <Link
             href={partner.link}
@@ -16,8 +16,8 @@ const Partners = (props: Props) => {
           >
             <Image
               src={partner.icon}
-              alt="Partner"
-              className="h-14 lg:h-16 2xl:h-20 flex-shrink-0 grayscale transition duration-500 hover:grayscale-0"
+              alt={`Partner-${index + 1}`}
+              className="max-h-14 lg:max-h-16 2xl:max-h-20 flex-shrink-0 w-auto h-auto grayscale transition duration-500 hover:grayscale-0 "
             />
           </Link>
         ))}
