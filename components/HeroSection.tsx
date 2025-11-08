@@ -33,11 +33,11 @@ const HeroSection = (props: Props) => {
         />
       </div>
       {/* TEXT CONTAINER */}
-      <div className="relative z-10 h-full flex flex-col gap-4 items-start justify-center p-4 pt-10 lg:order-1 lg:pl-20 lg:h-full w-full sm:w-[65%] lg:w-[45%] 2xl:gap-8 2xl:pl-40">
+      <div className="relative z-10 h-full flex flex-col gap-4 items-start justify-center p-4 pt-16 2xl:pt-[5rem] lg:order-1 lg:pl-20 lg:h-full w-full sm:w-[65%] lg:w-[45%] 2xl:gap-8 2xl:pl-40">
         <span className="text-base md:text-2xl 2xl:text-3xl text-primaryGreen font-inter font-semibold">
           ENGINES STUTTGART e.V.
         </span>
-        <h1 className="text-4xl sm:text-[2.75rem]/none lg:text-7xl 2xl:text-[5.5rem]/none self-start uppercase">
+        <h1 className="text-3xl sm:text-[2.75rem]/none lg:text-7xl 2xl:text-[5.5rem]/none self-start uppercase">
           Wir bringen den E-Sport ins Ländle!
         </h1>
         <div className="flex w-full">
