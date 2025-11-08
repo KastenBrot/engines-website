@@ -5,9 +5,11 @@ import HeroOriginal from "@/public/Hero_original.png";
 import Paper from "@/public/paper.png";
 
 /* Parner Logos */
-import CSStuttgart from "@/public/LOGO_CSS.svg";
+import CSS from "@/public/LOGO_CSS.svg";
 import HAM from "@/public/LOGO_HAM.svg";
 import SMZ from "@/public/LOGO_SMZ.svg";
+import VFB from "@/public/LOGO_VFB.svg";
+import LEETCAMP from "@/public/LOGO_1337.svg";
 
 /* Games */
 import AssettoCorsa from "@/public/games/assetto/AssettoCorsa.svg";
@@ -35,10 +37,10 @@ import ValorantScreenshot from "@/public/games/valorant/valorant-screenshot.jpg"
 import CS2Screenshot from "@/public/games/cs2/cs2-screenshot.jpg";
 import F1Screenshot from "@/public/games/f1/f1-screenshot.jpg";
 import RainbowScreenshot from "@/public/games/rainbow/rainbow-screenshot.jpg";
-import AssettoScreenshot from "@/public/games/assetto/assetto-screenshot.jpg"
+import AssettoScreenshot from "@/public/games/assetto/assetto-screenshot.jpg";
 
-import Simon from "@/public/board-members/Simon_serious-200x300.png"
-import Jonathan from "@/public/board-members/JADS-rotated-200x300.jpg"
+import Simon from "@/public/board-members/Simon_serious-200x300.png";
+import Jonathan from "@/public/board-members/JADS-rotated-200x300.jpg";
 
 export {
   /* Hero Images */
@@ -48,9 +50,11 @@ export {
   Paper,
 
   /* Partner Logos */
-  CSStuttgart,
+  CSS,
   HAM,
   SMZ,
+  VFB,
+  LEETCAMP,
 
   /* Games */
   Overwatch,
@@ -61,7 +65,6 @@ export {
   F123,
   RainbowSixSiege,
   AssettoCorsa,
-
   LolBackground,
   OWBackground,
   RLBackground,
@@ -70,7 +73,6 @@ export {
   RainbowBackground,
   F1Background,
   AssettoBackground,
-
   LolScreenshot,
   OWScreenshot,
   RLScreenshot,
@@ -82,5 +84,5 @@ export {
 
   /* BoardMembers */
   Simon,
-  Jonathan
+  Jonathan,
 };

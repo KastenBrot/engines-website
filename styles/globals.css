@@ -95,7 +95,6 @@
   }
 }
 
-
 .bg-engines {
   position: relative;
   border: 3px solid #fff;
@@ -109,11 +108,11 @@
   background-repeat: no-repeat;
   filter: blur(2.5px);
   -webkit-filter: blur(2.5px);
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .from-engines {
-  --tw-gradient-from: #009C59 var(--tw-gradient-from-position);
+  --tw-gradient-from: #009c59 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
@@ -125,14 +124,15 @@
 .btn-discord {
   border: 2px solid white;
   color: white;
-  filter: invert(42%) sepia(25%) saturate(2788%) hue-rotate(119deg) brightness(94%) contrast(101%);
+  filter: invert(42%) sepia(25%) saturate(2788%) hue-rotate(119deg)
+    brightness(94%) contrast(101%);
   padding: 6px;
-  border-radius: .5rem;
-  transition-duration: .3s;
+  border-radius: 0.5rem;
+  transition-duration: 0.3s;
 }
 
 .btn-discord:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .gradient-engines {
@@ -156,7 +156,7 @@
 }
 
 .bg-primaryGradient {
-  @apply bg-gradient-to-l from-primaryGreen to-secondaryGreen transform -translate-y-1.5;
+  @apply bg-gradient-to-l from-primaryGreen to-secondaryGreen transform;
 }
 
 /*

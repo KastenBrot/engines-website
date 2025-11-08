@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import { HeroOriginal } from "@/public";
+import { Discord } from "./SVGs/Socials";
 import ButtonTilted from "@/components/Buttons/ButtonTilted";
 
 type Props = {};
 
 const HeroSection = (props: Props) => {
-
   const handleClick = (redirectPath: string) => {
     window.open(redirectPath, "_blank");
   };
@@ -33,11 +33,11 @@ const HeroSection = (props: Props) => {
         />
       </div>
       {/* TEXT CONTAINER */}
-      <div className="relative z-10 h-full flex flex-col gap-4 items-start justify-center lg:order-1 lg:pl-20 lg:h-full lg:w-[40%] 2xl:gap-8 2xl:pl-40 m-4 md:m-4 sm:m-2">
-        <span className="text-base 2xl:text-3xl text-primaryGreen font-inter font-semibold">
+      <div className="relative z-10 h-full flex flex-col gap-4 items-start justify-center p-4 pt-10 lg:order-1 lg:pl-20 lg:h-full w-full sm:w-[65%] lg:w-[45%] 2xl:gap-8 2xl:pl-40">
+        <span className="text-base md:text-2xl 2xl:text-3xl text-primaryGreen font-inter font-semibold">
           ENGINES STUTTGART e.V.
         </span>
-        <h1 className="text-4xl xl:text-5xl 2xl:text-8xl self-start uppercase">
+        <h1 className="text-4xl sm:text-[2.75rem]/none lg:text-7xl 2xl:text-[5.5rem]/none self-start uppercase">
           Wir bringen den E-Sport ins Ländle!
         </h1>
         <div className="flex w-full">
@@ -49,7 +49,7 @@ const HeroSection = (props: Props) => {
             Mitglied Werden
           </ButtonTilted>
           <ButtonTilted
-            className="fill-transparent stroke-white hover:stroke-primaryGreen hover:text-primaryGreen"
+            className="fill-transparent stroke-white hover:text-white hover:fill-discordBlue"
             textStyle="font-anek text-lg font-bold stroke-none"
             rotateButton={true}
             onClick={() => handleClick("https://discord.com/invite/UwA2eSZVB4")}

@@ -13,13 +13,12 @@ export default function Button({
   textStyle,
   onClick,
 }: ButtonTestProps) {
-
   return (
     <button
-      className={`${className} rounded p-4 cursor-pointer transition ease-in-out duration-300 uppercase drop-shadow-2xl ${textStyle}`}
+      className={`${className} rounded cursor-pointer transition ease-in-out duration-300 uppercase drop-shadow-2xl ${textStyle}`}
       onClick={onClick}
     >
-        {children}
+      {children}
     </button>
   );
 }

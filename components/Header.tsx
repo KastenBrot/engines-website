@@ -102,7 +102,7 @@ function NavBar(props: Props) {
           ))}
           <li>
             <ShopButton
-              className="text-white"
+              className="text-white ml-4"
               onClick={() => handleClick("https://www.xoose.de/ngns/")}
             >
               <ShoppingBag className="fill-current flex-shrink-0" />
@@ -116,43 +116,3 @@ function NavBar(props: Props) {
 }
 
 export default NavBar;
-
-/** Later needed for responsiveness
- * 
- * <button
-        id="toggleSidebar"
-        data-drawer-target="sidebar"
-        data-drawer-toggle="sidebar"
-        aria-controls="sidebar"
-        type="button"
-        className="pr-4 text-gray-600 rounded cursor-pointer lg:hidden hover:text-secondaryBlue hover:bg-gray-100 focus:bg-gray-100 focus:ring-2 focus:ring-gray-100"
-      >
-        <span className="sr-only">Open Sidebar</span>
-        <svg
-          className="w-7 h-7"
-          aria-hidden="false"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clipRule="evenodd"
-            fillRule="evenodd"
-            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
-          ></path>
-        </svg>
-        <svg
-          className="w-7 h-7 hidden"
-          aria-hidden="true"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clipRule="evenodd"
-            fillRule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-          />
-        </svg>
-
-      </button> */

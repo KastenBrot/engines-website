@@ -19,12 +19,22 @@ const config: Config = {
         fillerGray1: "#131516",
         fillerGray2: "#212326",
         whitesmoke: "whitesmoke",
-        whitesmoker: "rgb(223, 223, 223)"
+        whitesmoker: "rgb(223, 223, 223)",
+        discordBlue: "#5865F2",
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
         anek: ["var(--font-anek-gurmukhi)"],
         exo2: ["var(--font-exo-2)"],
+      },
+      animation: {
+        ["infinite-slider"]: "infinite-slider 25s linear infinite",
+      },
+      keyframes: {
+        "infinite-slider": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
     },
   },
