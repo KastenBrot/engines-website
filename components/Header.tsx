@@ -69,6 +69,9 @@ function NavBar(props: Props) {
           <Link href="/verein" onClick={toggleMenu} className="text-white">
             Verein
           </Link>
+          <Link href="/contact" onClick={toggleMenu} className="text-white">
+            Kontakt
+          </Link>
           <button
             className="text-white flex items-center gap-2"
             onClick={() => {

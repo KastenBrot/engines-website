@@ -29,6 +29,11 @@ export default function Footer(props: Props) {
                 Verein und Vorstand
               </Link>
             </li>
+            <li key="3">
+              <Link href="/contact" className="hover:underline text-sm">
+                Kontakt
+              </Link>
+            </li>
           </ul>
         </div>
 
