@@ -131,7 +131,7 @@ export const socialMedia = [
 ];
 
 export const partners = [
-  {
+/*  {
     id: "partner-1",
     name: "SMZ Stuttgart",
     icon: SMZ,
@@ -139,15 +139,15 @@ export const partners = [
   },
   {
     id: "partner-2",
-    name: "VfB eSports",
-    icon: VFB,
-    link: "https://www.instagram.com/vfbesports",
-  },
-  {
-    id: "partner-3",
     name: "Computerspielschule Stuttgart",
     icon: CSS,
     link: "https://computerspielschule-stuttgart.de/",
+  },*/
+  {
+    id: "partner-3",
+    name: "VfB eSports",
+    icon: VFB,
+    link: "https://www.instagram.com/vfbesports",
   },
   {
     id: "partner-4",
