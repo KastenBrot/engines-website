@@ -40,7 +40,7 @@ export default function Game({ params }: { params: { game: string } }) {
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary opacity-90"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-transparent to-transparent"></div>
-        
+
         {/* Hero Content */}
         <div className="absolute inset-0 flex items-center justify-start px-8 lg:px-16">
           <div className="max-w-2xl">
@@ -72,7 +72,7 @@ export default function Game({ params }: { params: { game: string } }) {
               <h3 className="text-2xl font-anek font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen to-secondaryGreen">
                 Ansprechpartner
               </h3>
-              
+
               <div className="flex flex-col space-y-4">
                 <div>
                   <p className="text-gray-400 text-sm uppercase tracking-wide mb-1">
@@ -104,7 +104,7 @@ export default function Game({ params }: { params: { game: string } }) {
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-            
+
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-primaryGreen rounded-full opacity-20 blur-3xl -z-10"></div>
             <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-secondaryGreen rounded-full opacity-20 blur-3xl -z-10"></div>
@@ -113,26 +113,14 @@ export default function Game({ params }: { params: { game: string } }) {
 
         {/* Additional Info Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          <div className="bg-gradient-to-br from-secondary to-tertiary rounded-lg p-6 border border-lightgray hover:border-primaryGreen transition-all duration-300 text-center group">
-            <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen to-secondaryGreen mb-2 group-hover:scale-110 transition-transform duration-300">
-              5v5
+          {data.additionalInfo.map((info, index) => (
+            <div key={index} className="bg-gradient-to-br from-secondary to-tertiary rounded-lg p-6 border border-lightgray hover:border-primaryGreen transition-all duration-300 text-center group">
+              <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen to-secondaryGreen mb-2 group-hover:scale-110 transition-transform duration-300">
+                {info.icon}
+              </div>
+              <p className="text-gray-400">{info.label}</p>
             </div>
-            <p className="text-gray-400">Teambasiert</p>
-          </div>
-
-          <div className="bg-gradient-to-br from-secondary to-tertiary rounded-lg p-6 border border-lightgray hover:border-primaryGreen transition-all duration-300 text-center group">
-            <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen to-secondaryGreen mb-2 group-hover:scale-110 transition-transform duration-300">
-              ∞
-            </div>
-            <p className="text-gray-400">Unbegrenzte Möglichkeiten</p>
-          </div>
-
-          <div className="bg-gradient-to-br from-secondary to-tertiary rounded-lg p-6 border border-lightgray hover:border-primaryGreen transition-all duration-300 text-center group">
-            <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen to-secondaryGreen mb-2 group-hover:scale-110 transition-transform duration-300">
-              ⚡
-            </div>
-            <p className="text-gray-400">Kompetitiv</p>
-          </div>
+          ))}
         </div>
       </section>
     </main>
@@ -154,6 +142,11 @@ const content = [
       discordHandle: "coolchrisx1307",
       discordId: "1319432822460780605",
     },
+    additionalInfo: [
+      { icon: "5v5", label: "Teambasiert" },
+      { icon: "∞", label: "Unbegrenzte Möglichkeiten" },
+      { icon: "⚡", label: "Kompetitiv" },
+    ],
   },
   {
     id: "overwatch",
@@ -169,6 +162,11 @@ const content = [
       discordHandle: "haikun",
       discordId: "100644104613949440",
     },
+    additionalInfo: [
+      { icon: "5v5", label: "Teambasiert" },
+      { icon: "🎭", label: "Helden-Vielfalt" },
+      { icon: "⚡", label: "Schnell & Dynamisch" },
+    ],
   },
   {
     id: "rocketleague",
@@ -184,6 +182,11 @@ const content = [
       discordHandle: "shadicti",
       discordId: "965636299509882980",
     },
+    additionalInfo: [
+      { icon: "3v3", label: "Teambasiert" },
+      { icon: "🚀", label: "Fußball mit Autos" },
+      { icon: "🏆", label: "Präzision & Geschick" },
+    ],
   },
   {
     id: "valorant",
@@ -199,6 +202,11 @@ const content = [
       discordHandle: "haikun",
       discordId: "100644104613949440",
     },
+    additionalInfo: [
+      { icon: "5v5", label: "Taktisch / Teambasiert" },
+      { icon: "🔫", label: "Präzisions-Shooter" },
+      { icon: "⚡", label: "Kompetitiv" },
+    ],
   },
   {
     id: "cs2",
@@ -214,6 +222,11 @@ const content = [
       discordHandle: "haikun",
       discordId: "100644104613949440",
     },
+    additionalInfo: [
+      { icon: "5v5", label: "Taktisch / Teambasiert" },
+      { icon: "🏆", label: "Legendärer Titel" },
+      { icon: "⚡", label: "Kompetitiv" },
+    ],
   },
   {
     id: "f1",
@@ -229,6 +242,11 @@ const content = [
       discordHandle: "cyhper3102",
       discordId: "260422097506009098",
     },
+    additionalInfo: [
+      { icon: "🏎️", label: "Jeder für sich" },
+      { icon: "🏆", label: "Formel-1 Simulation" },
+      { icon: "🌍", label: "Präzision & Geschick" },
+    ],
   },
   {
     id: "rainbow",
@@ -245,6 +263,11 @@ const content = [
       discordHandle: "haikun",
       discordId: "100644104613949440",
     },
+    additionalInfo: [
+      { icon: "5v5", label: "Taktisch / Teambasiert" },
+      { icon: "🏆", label: "Operator-System" },
+      { icon: "⚡", label: "Kompetitiv" },
+    ],
   },
   {
     id: "assetto",
@@ -260,5 +283,10 @@ const content = [
       discordHandle: "haikun",
       discordId: "100644104613949440",
     },
+    additionalInfo: [
+      { icon: "🚗", label: "Jeder für sich" },
+      { icon: "⚙️", label: "Detaillierte Physik" },
+      { icon: "🏎️", label: "Realistische Simulation" },
+    ],
   },
 ];
