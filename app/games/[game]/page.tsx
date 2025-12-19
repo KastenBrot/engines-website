@@ -28,56 +28,102 @@ export default function Game({ params }: { params: { game: string } }) {
   }
 
   return (
-    <section className="flex flex-col h-screen lg:h-[85vh]">
-      <div className="flex justify-center h-1/3">
+    <main className="min-h-screen bg-primary">
+      {/* Hero Section */}
+      <section className="relative w-full h-[60vh] lg:h-[70vh] overflow-hidden">
         <Image
           src={data.background}
           alt={data.backgroundAlt}
-          className="w-full blur-sm object-cover opacity-30"
+          className="absolute inset-0 w-full h-full object-cover"
+          priority
         />
-        <h1 className="absolute text-6xl mt-32">{data.title}</h1>
-      </div>
-      <div className="lg:order-1 lg:pl-36 flex justify-center p-8 lg:px-32">
-        <div className="flex flex-col lg:flex-row gap-8 ">
-          <div className="lg:w-1/2">
-            <div>
-              <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-engines">
-                {data.title}
-              </h1>
-              <p>{data.description}</p>
-            </div>
-            <div className="py-8">
-              <h2 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-engines">
-                Ansprechpartner:
-              </h2>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary opacity-90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-transparent to-transparent"></div>
 
-              <div className="flex flex-row gap-5 place-items-center">
-                <p>{data.responsible.name}</p>
+        {/* Hero Content */}
+        <div className="absolute inset-0 flex items-center justify-start px-8 lg:px-16">
+          <div className="max-w-2xl">
+            <h1 className="text-6xl lg:text-7xl font-anek font-bold mb-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen via-primaryGreen to-secondaryGreen">
+                {data.title}
+              </span>
+            </h1>
+            <div className="h-1 w-24 bg-gradient-to-r from-primaryGreen to-secondaryGreen rounded-full"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content Section */}
+      <section className="relative z-10 px-8 lg:px-16 py-16 lg:py-20 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Left Column - Description and Contact */}
+          <div className="space-y-8">
+            {/* Description Card */}
+            <div className="bg-gradient-to-br from-secondary to-tertiary rounded-xl p-8 border border-lightgray hover:border-primaryGreen transition-all duration-300 shadow-lg">
+              <h2 className="text-3xl lg:text-4xl font-anek font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen to-secondaryGreen">
+                Über das Spiel
+              </h2>
+              <p className="text-gray-300 leading-relaxed text-lg">{data.description}</p>
+            </div>
+
+            {/* Contact Card */}
+            <div className="bg-gradient-to-br from-fillerGray2 to-tertiary rounded-xl p-8 border border-lightgray hover:border-primaryGreen transition-all duration-300 shadow-lg">
+              <h3 className="text-2xl font-anek font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen to-secondaryGreen">
+                Ansprechpartner
+              </h3>
+
+              <div className="flex flex-col space-y-4">
+                <div>
+                  <p className="text-gray-400 text-sm uppercase tracking-wide mb-1">
+                    Verantwortlich
+                  </p>
+                  <p className="text-xl font-bold text-white">{data.responsible.name}</p>
+                </div>
+
                 <a
-                  className="btn-discord"
                   href={`https://discordapp.com/users/${data.responsible.discordId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 mt-4 px-6 py-3 bg-gradient-to-r from-discordBlue to-blue-600 hover:from-blue-600 hover:to-discordBlue rounded-lg font-bold text-white transition-all duration-300 transform hover:scale-105 w-fit"
                 >
-                  <div className="flex flex-row">
-                    {/*<Image
-                      src={Discord}
-                      alt="Discord Icon"
-                      className="w-5 mr-2"
-                    ></Image> */}
-                    <Discord />
-                    {data.responsible.discordHandle}
-                  </div>
+                  <Discord />
+                  <span>{data.responsible.discordHandle}</span>
                 </a>
               </div>
             </div>
           </div>
-          <Image
-            src={data.screenshot}
-            alt={data.screenshotAlt}
-            className="lg:w-1/2"
-          ></Image>
+
+          {/* Right Column - Screenshot */}
+          <div className="relative h-full">
+            <div className="relative rounded-xl overflow-hidden border-2 border-primaryGreen shadow-2xl group">
+              <div className="absolute inset-0 bg-gradient-to-br from-primaryGreen to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-500 z-10"></div>
+              <Image
+                src={data.screenshot}
+                alt={data.screenshotAlt}
+                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Decorative elements */}
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-primaryGreen rounded-full opacity-20 blur-3xl -z-10"></div>
+            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-secondaryGreen rounded-full opacity-20 blur-3xl -z-10"></div>
+          </div>
         </div>
-      </div>
-    </section>
+
+        {/* Additional Info Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+          {data.additionalInfo.map((info, index) => (
+            <div key={index} className="bg-gradient-to-br from-secondary to-tertiary rounded-lg p-6 border border-lightgray hover:border-primaryGreen transition-all duration-300 text-center group">
+              <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen to-secondaryGreen mb-2 group-hover:scale-110 transition-transform duration-300">
+                {info.icon}
+              </div>
+              <p className="text-gray-400">{info.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }
 
@@ -96,6 +142,11 @@ const content = [
       discordHandle: "coolchrisx1307",
       discordId: "1319432822460780605",
     },
+    additionalInfo: [
+      { icon: "5v5", label: "Teambasiert" },
+      { icon: "∞", label: "Unbegrenzte Möglichkeiten" },
+      { icon: "⚡", label: "Kompetitiv" },
+    ],
   },
   {
     id: "overwatch",
@@ -111,6 +162,11 @@ const content = [
       discordHandle: "haikun",
       discordId: "100644104613949440",
     },
+    additionalInfo: [
+      { icon: "5v5", label: "Teambasiert" },
+      { icon: "🎭", label: "Helden-Vielfalt" },
+      { icon: "⚡", label: "Schnell & Dynamisch" },
+    ],
   },
   {
     id: "rocketleague",
@@ -126,6 +182,11 @@ const content = [
       discordHandle: "shadicti",
       discordId: "965636299509882980",
     },
+    additionalInfo: [
+      { icon: "3v3", label: "Teambasiert" },
+      { icon: "🚀", label: "Fußball mit Autos" },
+      { icon: "🏆", label: "Präzision & Geschick" },
+    ],
   },
   {
     id: "valorant",
@@ -141,6 +202,11 @@ const content = [
       discordHandle: "haikun",
       discordId: "100644104613949440",
     },
+    additionalInfo: [
+      { icon: "5v5", label: "Taktisch / Teambasiert" },
+      { icon: "🔫", label: "Präzisions-Shooter" },
+      { icon: "⚡", label: "Kompetitiv" },
+    ],
   },
   {
     id: "cs2",
@@ -156,6 +222,11 @@ const content = [
       discordHandle: "haikun",
       discordId: "100644104613949440",
     },
+    additionalInfo: [
+      { icon: "5v5", label: "Taktisch / Teambasiert" },
+      { icon: "🏆", label: "Legendärer Titel" },
+      { icon: "⚡", label: "Kompetitiv" },
+    ],
   },
   {
     id: "f1",
@@ -171,6 +242,11 @@ const content = [
       discordHandle: "cyhper3102",
       discordId: "260422097506009098",
     },
+    additionalInfo: [
+      { icon: "🏎️", label: "Jeder für sich" },
+      { icon: "🏆", label: "Formel-1 Simulation" },
+      { icon: "🌍", label: "Präzision & Geschick" },
+    ],
   },
   {
     id: "rainbow",
@@ -187,6 +263,11 @@ const content = [
       discordHandle: "haikun",
       discordId: "100644104613949440",
     },
+    additionalInfo: [
+      { icon: "5v5", label: "Taktisch / Teambasiert" },
+      { icon: "🏆", label: "Operator-System" },
+      { icon: "⚡", label: "Kompetitiv" },
+    ],
   },
   {
     id: "assetto",
@@ -202,5 +283,10 @@ const content = [
       discordHandle: "haikun",
       discordId: "100644104613949440",
     },
+    additionalInfo: [
+      { icon: "🚗", label: "Jeder für sich" },
+      { icon: "⚙️", label: "Detaillierte Physik" },
+      { icon: "🏎️", label: "Realistische Simulation" },
+    ],
   },
 ];
