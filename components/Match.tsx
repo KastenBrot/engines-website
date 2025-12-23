@@ -30,7 +30,9 @@ const Match: React.FC<MatchProps> = ({ score, format, tournament }) => {
         <div className="bg-tertiary grid grid-cols-3 rounded-b p-3 items-center">
           <Image
             src={Valorant}
-            className="w-[3rem] justify-center row-span-2 m-5"
+            width={48}
+            height={48}
+            className="justify-center row-span-2 m-5"
             alt="Logo"
           />
 

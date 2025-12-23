@@ -17,6 +17,8 @@ const Partners = (props: Props) => {
             <Image
               src={partner.icon}
               alt={`Partner-${index + 1}`}
+              width={160}
+              height={64}
               className="max-h-14 lg:max-h-16 2xl:max-h-20 flex-shrink-0 w-auto h-auto grayscale transition duration-500 hover:grayscale-0 "
             />
           </Link>

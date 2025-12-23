@@ -31,7 +31,10 @@ export default function Games(props: Props) {
                 <Image
                   src={game.background}
                   alt={game.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ objectFit: "cover" }}
+                  className="group-hover:scale-110 transition-transform duration-500"
                 />
                 
                 {/* Dark Overlay */}
@@ -47,7 +50,9 @@ export default function Games(props: Props) {
                   <Image
                     src={game.icon}
                     alt={game.name}
-                    className="w-full h-full object-contain drop-shadow-lg"
+                    width={128}
+                    height={128}
+                    className="object-contain drop-shadow-lg"
                   />
                 </div>
                 

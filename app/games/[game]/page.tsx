@@ -34,7 +34,9 @@ export default function Game({ params }: { params: { game: string } }) {
         <Image
           src={data.background}
           alt={data.backgroundAlt}
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          sizes="100vw"
+          style={{ objectFit: "cover" }}
           priority
         />
         {/* Gradient Overlay */}
@@ -101,7 +103,10 @@ export default function Game({ params }: { params: { game: string } }) {
               <Image
                 src={data.screenshot}
                 alt={data.screenshotAlt}
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: "cover" }}
+                className="group-hover:scale-105 transition-transform duration-500"
               />
             </div>
 

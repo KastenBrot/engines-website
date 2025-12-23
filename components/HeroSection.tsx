@@ -22,14 +22,12 @@ const HeroSection = (props: Props) => {
         <Image
           src={HeroOriginal}
           alt="Hero Section Image"
-          width={7148}
-          height={4771}
-          sizes="(max-width: 1200px) 60vw,
-              (max-width: 768px) 50vw,  
-              50vw"
+          fill
+          sizes="100vw"
           placeholder="blur"
           priority
-          className="object-cover w-full h-full filter blur-sm brightness-50"
+          style={{ objectFit: "cover" }}
+          className="filter blur-sm brightness-50"
         />
       </div>
       {/* TEXT CONTAINER */}

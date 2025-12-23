@@ -11,7 +11,7 @@ export default function Footer(props: Props) {
     <footer className="flex flex-col w-full justify-center items-center bg-secondary shadow border-t-2 border-primary p-6 lg:px-16 2xl:px-32 gap-4">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6">
         <Link href="#">
-          <Image src={Logo} alt="Logo" className="w-32 md:w-40 md:h-40" />
+          <Image src={Logo} alt="Logo" width={128} height={128} className="md:w-40 md:h-40" />
         </Link>
 
         <div className="text-center md:text-left">

@@ -25,7 +25,6 @@ const config: Config = {
       fontFamily: {
         inter: ["var(--font-inter)"],
         anek: ["var(--font-anek-gurmukhi)"],
-        exo2: ["var(--font-exo-2)"],
       },
       animation: {
         ["infinite-slider"]: "infinite-slider 25s linear infinite",
