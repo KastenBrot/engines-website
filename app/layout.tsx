@@ -28,6 +28,13 @@ export const metadata: Metadata = {
   title: "Engines Stuttgart e.V.",
   description:
     "Der Engines Stuttgart e.V. ist der 1. offizielle E-Sports Verein aus der Metropolregion Stuttgart.",
+  icons: {
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml", sizes: "any" },
+    ],
+    apple: "/logo.svg",
+    shortcut: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
