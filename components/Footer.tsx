@@ -34,6 +34,11 @@ export default function Footer(props: Props) {
                 Kontakt
               </Link>
             </li>
+            <li key="3">
+              <Link href="https://engines.webling.eu/portal#/" about="_blank" className="hover:underline text-sm">
+                Mitgliederbereich
+              </Link>
+            </li>
           </ul>
         </div>
 
