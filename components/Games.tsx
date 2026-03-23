@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { games } from "@/constants";
+import "@/styles/globals.css";
 
 type Props = {};
 
@@ -39,6 +40,9 @@ export default function Games(props: Props) {
                 
                 {/* Green Highlight on Hover */}
                 <div className="absolute inset-0 bg-gradient-to-r from-primaryGreen to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                
+                {/* Additional Darkening Effect on Hover */}
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
               </div>
 
               {/* Icon and Text Container */}

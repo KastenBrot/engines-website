@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "@/styles/globals.css";
 import { redirect } from "next/navigation";
 import {
   AssettoBackground,
@@ -15,10 +16,13 @@ import {
   RLScreenshot,
   RainbowBackground,
   RainbowScreenshot,
+  SF6Background,
+  SF6Screenshot,
   ValorantBackground,
   ValorantScreenshot,
 } from "@/public";
 import { Discord } from "@/components/SVGs/Socials";
+import { description } from "@/constants";
 
 export default function Game({ params }: { params: { game: string } }) {
   const data = content.find((content) => content.id === params.game);
@@ -38,18 +42,18 @@ export default function Game({ params }: { params: { game: string } }) {
           priority
         />
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary opacity-90"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-transparent to-transparent"></div>
+        <div className="absolute inset-0 v-black-fade"></div>
+        <div className="absolute inset-0 h-black-fade"></div>
 
         {/* Hero Content */}
         <div className="absolute inset-0 flex items-center justify-start px-8 lg:px-16">
           <div className="max-w-2xl">
             <h1 className="text-6xl lg:text-7xl font-anek font-bold mb-4">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen via-primaryGreen to-secondaryGreen">
+              <span className="text-transparent bg-clip-text big-title-gradient">
                 {data.title}
               </span>
             </h1>
-            <div className="h-1 w-24 bg-gradient-to-r from-primaryGreen to-secondaryGreen rounded-full"></div>
+            <div className="h-1 w-24 decoration-gradient rounded-full"></div>
           </div>
         </div>
       </section>
@@ -60,16 +64,16 @@ export default function Game({ params }: { params: { game: string } }) {
           {/* Left Column - Description and Contact */}
           <div className="space-y-8">
             {/* Description Card */}
-            <div className="bg-gradient-to-br from-secondary to-tertiary rounded-xl p-8 border border-lightgray hover:border-primaryGreen transition-all duration-300 shadow-lg">
-              <h2 className="text-3xl lg:text-4xl font-anek font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen to-secondaryGreen">
+            <div className="card-gradient rounded-xl p-8 border border-lightgray hover:border-primaryGreen transition-all duration-300 shadow-lg">
+              <h2 className="title-gradient text-3xl lg:text-4xl pt-1 font-anek font-bold mb-6 bg-clip-text">
                 Über das Spiel
               </h2>
               <p className="text-gray-300 leading-relaxed text-lg">{data.description}</p>
             </div>
 
             {/* Contact Card */}
-            <div className="bg-gradient-to-br from-fillerGray2 to-tertiary rounded-xl p-8 border border-lightgray hover:border-primaryGreen transition-all duration-300 shadow-lg">
-              <h3 className="text-2xl font-anek font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen to-secondaryGreen">
+            <div className="card-gradient2 rounded-xl p-8 border border-lightgray hover:border-primaryGreen transition-all duration-300 shadow-lg">
+              <h3 className="text-2xl font-anek font-bold mb-6 text-transparent bg-clip-text title-gradient">
                 Ansprechpartner
               </h3>
 
@@ -85,7 +89,7 @@ export default function Game({ params }: { params: { game: string } }) {
                   href={`https://discordapp.com/users/${data.responsible.discordId}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 mt-4 px-6 py-3 bg-gradient-to-r from-discordBlue to-blue-600 hover:from-blue-600 hover:to-discordBlue rounded-lg font-bold text-white transition-all duration-300 transform hover:scale-105 w-fit"
+                  className="inline-flex items-center gap-3 mt-4 px-6 py-3 discord-gradient rounded-lg font-bold text-white transition-all duration-300 transform hover:scale-105 w-fit"
                 >
                   <Discord />
                   <span>{data.responsible.discordHandle}</span>
@@ -114,8 +118,8 @@ export default function Game({ params }: { params: { game: string } }) {
         {/* Additional Info Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
           {data.additionalInfo.map((info, index) => (
-            <div key={index} className="bg-gradient-to-br from-secondary to-tertiary rounded-lg p-6 border border-lightgray hover:border-primaryGreen transition-all duration-300 text-center group">
-              <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primaryGreen to-secondaryGreen mb-2 group-hover:scale-110 transition-transform duration-300">
+            <div key={index} className="card-gradient rounded-lg p-6 border border-lightgray hover:border-primaryGreen transition-all duration-300 text-center group">
+              <div className="text-4xl font-bold title-gradient mb-2 group-hover:scale-110 transition-transform duration-300">
                 {info.icon}
               </div>
               <p className="text-gray-400">{info.label}</p>
@@ -289,4 +293,24 @@ const content = [
       { icon: "🏎️", label: "Realistische Simulation" },
     ],
   },
+  {
+    id: "sf6",
+    title: "STREET FIGHTER 6",
+    description:
+      'Du willst mit uns "Street Fighter 6" spielen? Wir bieten dir ein gemeinsames regelmäßiges Training und VOD-Reviews mit einer unserer Coaches. Zusammen mit uns kannst du auf Turniere gehen, das nächste große Turnier anschauen oder auch einfach offline ein paar Runden gegen einander spielen.',
+    background: SF6Background,
+    backgroundAlt: "Characters standing menacingly",
+    screenshot: SF6Screenshot,
+    screenshotAlt: "Ryu whiffing a kick",
+    responsible: {
+      name: 'Julian "BigMango"',
+      dicordHandle: "big.mango",
+      diecordID: "438751071322636289",
+    },
+    additionalInfo: [
+      { icon: "🥊", label: "1 gegen 1" },
+      { icon: "🏆", label: "intensive Matches" },
+      { icon: "✈️", label: "Kämpfer aus aller Welt" },
+    ],
+  }
 ];

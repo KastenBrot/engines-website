@@ -15,7 +15,7 @@ export default async function Legal({ params }: { params: { page: string } }) {
           Verantwortlicher für den Internetauftritt:
         </h2>
         <p>
-          Simon clauß <br />
+          Simon Clauß <br />
           Engines Stuttgart e.V. <br />
           Breitenstraße 7 <br />
           71296 Heimsheim <br />
