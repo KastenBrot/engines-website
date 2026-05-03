@@ -5,7 +5,7 @@ import ShopButton from "@/components/Buttons/ShopButton";
 import { navLinks, socialMedia } from "@/constants";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { LogoWithText } from "./SVGs/EnginesLogos";
-import { ShoppingBag } from "./SVGs/Icons";
+import { PersonCircle, ShoppingBag } from "./SVGs/Icons";
 import { useState } from "react";
 
 type Props = {};
@@ -13,6 +13,7 @@ type Props = {};
 function NavBar(props: Props) {
   const scrollPosition = useScrollPosition();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const membersAreaLink = "https://engines.webling.eu/portal#/";
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -82,6 +83,16 @@ function NavBar(props: Props) {
             <ShoppingBag className="fill-current flex-shrink-0" />
             <span>Shop</span>
           </button>
+          <button
+            className="text-white flex items-center gap-2"
+            onClick={() => {
+              toggleMenu();
+              handleClick(membersAreaLink);
+            }}
+          >
+            <PersonCircle className="fill-current flex-shrink-0" />
+            <span>Mitgliederbereich</span>
+          </button>
         </div>
       )}
 
@@ -111,6 +122,17 @@ function NavBar(props: Props) {
               <ShoppingBag className="fill-current flex-shrink-0" />
               <span>Shop</span>
             </ShopButton>
+          </li>
+          <li>
+            <Link
+              href={membersAreaLink}
+              target="_blank"
+              rel="noreferrer"
+              className="ml-4 flex items-center gap-2"
+            >
+              <PersonCircle className="fill-current flex-shrink-0" />
+              <span>Mitgliederbereich</span>
+            </Link>
           </li>
         </ul>
       </nav>

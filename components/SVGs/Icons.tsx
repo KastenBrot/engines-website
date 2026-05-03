@@ -18,4 +18,22 @@ function ShoppingBag(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export { ShoppingBag };
+function PersonCircle(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="1em"
+      height="1em"
+      {...props}
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 2.25a9.75 9.75 0 1 0 0 19.5 9.75 9.75 0 0 0 0-19.5ZM9.75 9a2.25 2.25 0 1 1 4.5 0 2.25 2.25 0 0 1-4.5 0Zm-2.159 7.396a8.231 8.231 0 0 1 8.818 0 8.25 8.25 0 0 1-8.818 0Z"
+      />
+    </svg>
+  );
+}
+
+export { ShoppingBag, PersonCircle };
