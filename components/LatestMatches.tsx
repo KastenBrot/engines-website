@@ -8,10 +8,9 @@ export default async function LatestMatches() {
   return (
     <section className="w-full bg-primary shadow-[0_20px_50px_rgba(26,_27,_26,_1)]">
       <div className="w-5/6 mx-auto py-10">
-        <div className="text-[3rem] flex justify-center items-center align-top mb-8">
-          Match Historie
-        </div>
-
+      <h1 className="text-lg md:text-4xl font-bold justify-center items-center">
+          Match History
+        </h1>
         {matches.length > 0 ? (
           <MatchesList matches={matches} />
         ) : (
@@ -20,13 +19,13 @@ export default async function LatestMatches() {
           </div>
         )}
 
-        <div className="pt-10 flex justify-center items-center">
-          <div className="h-30 text-[2.5rem]">
+        <div className="pt-10 flex">
+          <div className="h-30">
             <Link
               href="/matches"
-              className="rounded cursor-pointer transition ease-in-out duration-300 uppercase drop-shadow-2xl px-6 py-3 bg-tertiary hover:bg-secondary inline-block"
+              className="hover:underline transition"
             >
-              Alle Matches
+              → Alle Matches
             </Link>
           </div>
         </div>

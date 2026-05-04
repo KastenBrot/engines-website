@@ -5,7 +5,7 @@ let client: RedisClientType | null = null;
 export async function getRedis(): Promise<RedisClientType> {
   if (client?.isOpen) return client;
 
-  const url = process.env.REDIS_URL;
+  const url = process.env.REDIS_URL ?? process.env.ngns_matches_REDIS_URL;
   if (!url) {
     throw new Error("Missing REDIS_URL environment variable.");
   }

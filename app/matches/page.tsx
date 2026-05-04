@@ -9,7 +9,7 @@ export default async function MatchesPage() {
   const gameOptions = games.map((g) => ({ id: g.id, name: g.name }));
 
   return (
-    <main className="min-h-screen bg-primary">
+    <main className="min-h-screen bg-primary mt-12">
       <MatchesPageClient matches={matches} gameOptions={gameOptions} />
     </main>
   );
