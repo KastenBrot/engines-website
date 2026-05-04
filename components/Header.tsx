@@ -67,6 +67,9 @@ function NavBar(props: Props) {
           <Link href="/#games" onClick={toggleMenu} className="text-white">
             Games
           </Link>
+          <Link href="/matches" onClick={toggleMenu} className="text-white">
+            Matches
+          </Link>
           <Link href="/verein" onClick={toggleMenu} className="text-white">
             Verein
           </Link>

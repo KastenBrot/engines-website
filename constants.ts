@@ -36,6 +36,10 @@ export const navLinks = [
     title: "Games",
   },
   {
+    id: "/matches",
+    title: "Matches",
+  },
+  {
     id: "/verein",
     title: "Verein",
   },
