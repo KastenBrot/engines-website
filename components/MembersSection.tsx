@@ -1,6 +1,7 @@
 "use client";
 
 import Button from "@/components/Buttons/Button";
+import { PersonCircle } from "@/components/SVGs/Icons";
 
 const MembersSection = () => {
   const handleClick = () => {
@@ -16,10 +17,11 @@ const MembersSection = () => {
         </p>
         <div className="flex justify-center w-full pt-4">
           <Button
-            className="p-4 w-[12rem] bg-primaryGreen stroke-primaryGreen hover:scale-105 hover:shadow-lg"
+            className="flex items-center justify-center gap-2 p-4 min-w-[12rem] w-auto bg-primaryGreen stroke-primaryGreen hover:scale-105 hover:shadow-lg"
             textStyle="font-anek text-sm md:text-md font-bold text-white"
             onClick={handleClick}
           >
+            <PersonCircle className="h-5 w-5 flex-shrink-0 fill-white" />
             Zum Mitgliederbereich
           </Button>
         </div>
