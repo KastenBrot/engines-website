@@ -20,6 +20,7 @@ import Overwatch from "@/public/games/ow/Overwatch.svg";
 import Valorant from "@/public/games/valorant/Valorant.svg";
 import RocketLeague from "@/public/games/rocketleague/RocketLeague.svg";
 import RainbowSixSiege from "@/public/games/rainbow/RainbowSixSiege.svg";
+import StreetFighter6 from "@/public/games/sf6/StreetFighter6.svg";
 
 import LolBackground from "@/public/games/lol/lol-background.jpg";
 import OWBackground from "@/public/games/ow/ow-background.jpg";
@@ -29,6 +30,7 @@ import CS2Background from "@/public/games/cs2/cs-background.jpg";
 import RainbowBackground from "@/public/games/rainbow/rainbow-background.jpg";
 import F1Background from "@/public/games/f1/f1-background.jpg";
 import AssettoBackground from "@/public/games/assetto/assetto-background.jpg";
+import SF6Background from "@/public/games/sf6/sf6-background.jpg";
 
 import LolScreenshot from "@/public/games/lol/lol-screenshot.jpg";
 import OWScreenshot from "@/public/games/ow/ow-screenshot.jpg";
@@ -38,6 +40,7 @@ import CS2Screenshot from "@/public/games/cs2/cs2-screenshot.jpg";
 import F1Screenshot from "@/public/games/f1/f1-screenshot.jpg";
 import RainbowScreenshot from "@/public/games/rainbow/rainbow-screenshot.jpg";
 import AssettoScreenshot from "@/public/games/assetto/assetto-screenshot.jpg";
+import SF6Screenshot from "@/public/games/sf6/sf6-screenshoot.jpg";
 
 import Simon from "@/public/board-members/Simon_serious-200x300.png";
 import Jonathan from "@/public/board-members/JADS-rotated-200x300.jpg";
@@ -65,6 +68,7 @@ export {
   F123,
   RainbowSixSiege,
   AssettoCorsa,
+  StreetFighter6,
   LolBackground,
   OWBackground,
   RLBackground,
@@ -73,6 +77,7 @@ export {
   RainbowBackground,
   F1Background,
   AssettoBackground,
+  SF6Background,
   LolScreenshot,
   OWScreenshot,
   RLScreenshot,
@@ -81,6 +86,7 @@ export {
   F1Screenshot,
   RainbowScreenshot,
   AssettoScreenshot,
+  SF6Screenshot,
 
   /* BoardMembers */
   Simon,

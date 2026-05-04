@@ -10,6 +10,7 @@ import {
   Overwatch,
   Valorant,
   AssettoCorsa,
+  StreetFighter6,
   LolBackground,
   OWBackground,
   RLBackground,
@@ -18,6 +19,7 @@ import {
   F1Background,
   RainbowBackground,
   AssettoBackground,
+  SF6Background,
   VFB,
   LEETCAMP,
 } from "@/public";
@@ -216,4 +218,11 @@ export const games = [
     link: "/games/assetto",
     background: AssettoBackground,
   },
+  {
+    id: "sf6",
+    name: "Street Fighter 6",
+    icon: StreetFighter6,
+    link: "/games/sf6",
+    background: SF6Background,
+  }
 ];
