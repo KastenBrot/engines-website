@@ -101,7 +101,7 @@ const geschaeftsfuehrung = [
     discord: "",
   },
   {
-    name: "Jonathan Berg",
+    name: "Chris Dietrich",
     role: "Stellv. Vorstandsvorsitzender",
     image: Jonathan,
     mail: "j.berg(at)engines-stuttgart.de",
@@ -125,7 +125,7 @@ const beisitzende = [
     discord: "",
   },
   {
-    name: "Chris Dietrich",
+    name: "Julian Neumeister",
     role: "Beisitzer - Events",
     image: Jonathan,
     mail: "c.dietrich(at)engines-stuttgart.de",

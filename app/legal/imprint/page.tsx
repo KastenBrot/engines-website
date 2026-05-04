@@ -28,7 +28,7 @@ export default async function Legal({ params }: { params: { page: string } }) {
 
         <p>
           Simon Clauß <br />
-          Jonathan Berg <br />
+          Chris Dietrich <br />
           Sabrina Mank <br />
           Registergericht: Amtsgericht Stuttgart <br />
           Registernummer: VR 724081 <br />
