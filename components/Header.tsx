@@ -115,6 +115,19 @@ function NavBar(props: Props) {
             </li>
           ))}
           <li>
+            <Link
+              href={membersAreaLink}
+              target="_blank"
+              rel="noreferrer"
+              className="group relative"
+            >
+              <PersonCircle className="fill-current flex-shrink-0 text-2xl 2xl:text-4xl" />
+              <span className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 -translate-x-1/2 whitespace-nowrap rounded bg-tertiary/90 px-3 py-1 text-sm font-inter font-semibold normal-case text-white opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100">
+                Mitgliederbereich
+              </span>
+            </Link>
+          </li>
+          <li>
             <ShopButton
               className="text-white ml-4"
               onClick={() => handleClick("https://www.xoose.de/ngns/")}
@@ -122,17 +135,6 @@ function NavBar(props: Props) {
               <ShoppingBag className="fill-current flex-shrink-0" />
               <span>Shop</span>
             </ShopButton>
-          </li>
-          <li>
-            <Link
-              href={membersAreaLink}
-              target="_blank"
-              rel="noreferrer"
-              className="ml-4 flex items-center gap-2"
-            >
-              <PersonCircle className="fill-current flex-shrink-0" />
-              <span>Mitgliederbereich</span>
-            </Link>
           </li>
         </ul>
       </nav>
